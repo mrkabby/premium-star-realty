@@ -7,6 +7,10 @@ import Properties from "../src/pages/Properties"; // Ensure correct paths
 import ContactUs from "../src/pages/Contact"; // Ensure correct paths
 import Footer from "../src/components/Footer"; // Ensure correct paths
 import HowToBuy from "./components/HowToBuy";
+import PristineGardens from "./components/propertydetails/PristineGardens";
+import LegacyGardens from "./components/propertydetails/LegacyGardens";
+import BristonsResidence from "./components/propertydetails/BristonsResidence";
+
 
 const App = () => {
   return (
@@ -21,6 +25,9 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/properties" element={<Properties />} />
+        <Route path="/properties/pristine-gardens" element={<PristineGardens />} />
+        <Route path="/properties/legacy-square" element={<LegacyGardens />} />
+        <Route path="/properties/brittons-residence" element={<BristonsResidence />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/how-to-buy" element={<HowToBuy />} />
           </Routes>

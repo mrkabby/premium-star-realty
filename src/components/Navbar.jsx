@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import Logo from "../assets/logo.jpg"; // Ensure the correct file path
+import Logo from "../assets/logo.png"; // Ensure the correct file path
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,10 +59,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/projects"
+              to="/properties"
               className="hover:underline hover:text-[#7B1C27] transition-colors duration-200"
             >
-              Projects
+              Properties
             </Link>
           </li>
           <li>
