@@ -123,11 +123,11 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/projects"
+              to="/properties"
               className="block hover:underline hover:text-[#7B1C27] transition-colors duration-200"
               onClick={() => setIsMenuOpen(false)} // Close menu on click
             >
-              Projects
+              Properties
             </Link>
           </li>
           <li>
