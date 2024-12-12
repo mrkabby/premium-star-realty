@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import Logo from "../assets/logo pr.jpg"; // Ensure the correct file path
+import Logo from "../assets/logo.jpg"; // Ensure the correct file path
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
