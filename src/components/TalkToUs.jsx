@@ -19,7 +19,7 @@ const ContactForm = () => {
 
         {/* Form Section */}
         <div>
-          <h3 className="text-2xl font-bold text-green-800 mb-4">Talk to Us</h3>
+          <h3 className="text-2xl font-bold text-[#7B1C27] mb-4">Talk to Us</h3>
           <form className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <input
@@ -61,15 +61,10 @@ const ContactForm = () => {
               className="p-3 rounded border border-gray-300 w-full"
               rows="5"
             ></textarea>
-            <div>
-              <label className="flex items-center space-x-2">
-                <input type="checkbox" />
-                <span>I'm not a robot</span>
-              </label>
-            </div>
+           
             <button
               type="submit"
-              className="px-6 py-3 bg-green-700 text-white rounded hover:bg-green-800 transition w-full"
+              className="px-6 py-3 bg-[#7B1C27] text-white rounded hover:bg-[#7B1C27] transition w-full"
             >
               Submit
             </button>

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import HeroImage1 from "../assets/bedroom.jpg";
 import HeroImage2 from "../assets/bed.jpg";
 import HeroImage3 from "../assets/pathway.jpg";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const images = [
     HeroImage1, 
     HeroImage2,
@@ -36,9 +38,9 @@ const HeroSection = () => {
           nestled within a unique regeneration neighbourhood in Spintex,
           Community 18.
         </p>
-        <button className="mt-6 px-6 py-3 bg-[#7B1C27] rounded-lg text-white hover:bg-[#a02735] transition duration-300">
+        <button className="mt-6 px-6 py-3 bg-[#7B1C27] rounded-lg text-white hover:bg-[#a02735] transition duration-300" onClick={() => navigate(`/properties`)}>
           Explore Properties
-        </button>
+        </button > 
       </div>
 
       {/* Indicators */}

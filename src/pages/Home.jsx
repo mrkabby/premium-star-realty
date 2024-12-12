@@ -9,6 +9,7 @@ import HeroSection from "../components/HeroSection";
 import ContactForm from "../components/TalkToUs";
 
 const HomePage = () => {
+  
   return (
     <>
       <HeroSection />
@@ -131,7 +132,7 @@ const HomePage = () => {
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-          <h2 className="z-10 text-2xl md:text-2xl font-thin">
+          <h2 className="z-10 text-2xl md:text-2xl font-thin text-center">
             Homes that stimulate positive vibes cascading away to merge with
             fresh air and good lighting.
           </h2>
