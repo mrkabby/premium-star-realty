@@ -25,13 +25,10 @@ const AboutSection = () => {
         <div>
           <h3 className="text-xl font-bold text-[#7B1C27] mb-4">ABOUT US</h3>
           <h4 className="text-2xl font-semibold text-gray-800 mb-4">
-            We are a luxury real estate development and management company
+          Find the perfect home or commercial space tailored to your needs.
           </h4>
           <p className="text-gray-700 text-lg leading-relaxed">
-            At Quao Realty, we understand the value of acquiring prime lands and
-            developing them into quality and luxurious residential and commercial
-            projects. Luxury and quality are our hallmarks as we create the
-            desired and suitable environment for living and commerce.
+          Discover a variety of rental options for families, professionals, and businesses.
           </p>
         </div>
         <div>
@@ -55,10 +52,10 @@ const AboutSection = () => {
           </div>
           <div>
             <h2 className="text-3xl font-bold text-[#7B1C27] mb-4">
-              Purchasing real estate, either as a home or as an investment is often a delicate decision.
+            Expertly managing your properties for maximum returns and minimal stress.
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              At Quao Realty we believe that mutual trust is fundamental to success in our industry. By confiding in each other, we guarantee great results when purchasing a property with us.
+            Real estate advice to help you make informed decisions.
             </p>
           </div>
         </div>

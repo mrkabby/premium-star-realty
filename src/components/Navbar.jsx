@@ -24,7 +24,7 @@ const Navbar = () => {
             alt="Premium Star Realty Logo"
             className="h-8 w-auto"
           />
-          <span className="text-lg font-bold text-[#7B1C27]">PREMIUM STAR REALTY</span>
+          <span className="text-lg font-bold text-[#3fc7d8]">PREMIUM STAR REALTY</span>
         </div>
 
         {/* Navigation Links */}

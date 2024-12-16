@@ -30,7 +30,7 @@ const TestimonialSection = () => {
   }, [testimonials.length]);
 
   return (
-    <div className="bg-[#7B1C27] text-white py-12 px-6 rounded-lg mb-12">
+    <div className="bg-[#3fc7d8] text-white py-12 px-6 rounded-lg mb-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
           <h2 className="text-3xl font-bold mb-4">WHY OUR CLIENTS <span className="text-pink-300">♥</span> US</h2>

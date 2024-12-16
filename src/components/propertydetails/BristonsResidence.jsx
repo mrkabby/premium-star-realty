@@ -7,9 +7,10 @@ const BristonsResidence = () => {
   return (
     <div>
       <section className="py-12 bg-gray-100 text-center">
-        <h1 className="text-4xl font-bold text-[#7B1C27]">Pristine Gardens</h1>
+        <h1 className="text-4xl font-bold text-[#7B1C27]">Bristons Residence</h1>
         <p className="mt-4 text-lg text-gray-600">
-          Luxury townhouses nestled in a serene environment with top-notch amenities.
+        Bedrooms 3 | 1 Kitchen | 2  Bathrooms | CCTV | Car Park | 24/7 Security
+                
         </p>
         <p className="mt-4 text-sm text-gray-500">Location: Sakumono, Accra</p>
       </section>

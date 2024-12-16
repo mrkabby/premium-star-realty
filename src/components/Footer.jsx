@@ -11,7 +11,7 @@ import Logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10">
+    <footer className="bg-[#1abbb9] text-white py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo Section */}
         <div className="flex flex-col items-center md:items-start space-y-4">
@@ -25,18 +25,18 @@ const Footer = () => {
         {/* Address Section */}
         <div className="flex flex-col items-center md:items-start space-y-2">
           <h3 className="text-lg font-semibold">ADDRESS</h3>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm ">
             House No. 14, First Close, <br />
             Airport Residential, Accra
           </p>
-          <p className="text-sm text-gray-400">+233 277 890 000</p>
-          <p className="text-sm text-gray-400">sales@premiumstarrealty.com</p>
+          <p className="text-sm ">+233 277 890 000</p>
+          <p className="text-sm ">sales@premiumstarrealty.com</p>
         </div>
 
         {/* Navigation Links */}
         <div className="flex flex-col items-center md:items-start space-y-2">
           <h3 className="text-lg font-semibold">NAVIGATE</h3>
-          <ul className="space-y-2 text-sm text-gray-400">
+          <ul className="space-y-2 text-sm ">
             <li>Britton’s Residence</li>
             <li>One Elm</li>
             <li>Pristine Gardens</li>
@@ -76,7 +76,7 @@ const Footer = () => {
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition"
+            className=" hover:text-white transition"
           >
             <FontAwesomeIcon icon={faFacebook} size="lg" />
           </a>
@@ -84,7 +84,7 @@ const Footer = () => {
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition"
+            className=" hover:text-white transition"
           >
             <FontAwesomeIcon icon={faTwitter} size="lg" />
           </a>
@@ -92,7 +92,7 @@ const Footer = () => {
             href="https://youtube.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition"
+            className=" hover:text-white transition"
           >
             <FontAwesomeIcon icon={faYoutube} size="lg" />
           </a>
@@ -100,7 +100,7 @@ const Footer = () => {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition"
+            className=" hover:text-white transition"
           >
             <FontAwesomeIcon icon={faLinkedin} size="lg" />
           </a>
@@ -108,7 +108,7 @@ const Footer = () => {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition"
+            className=" hover:text-white transition"
           >
             <FontAwesomeIcon icon={faInstagram} size="lg" />
           </a>

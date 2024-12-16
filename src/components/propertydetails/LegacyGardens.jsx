@@ -7,7 +7,7 @@ const LegacyGardens = () => {
   return (
     <div>
       <section className="py-12 bg-gray-100 text-center">
-        <h1 className="text-4xl font-bold text-[#7B1C27]">Pristine Gardens</h1>
+        <h1 className="text-4xl font-bold text-[#7B1C27]">Legacy Gardens</h1>
         <p className="mt-4 text-lg text-gray-600">
           Luxury townhouses nestled in a serene environment with top-notch amenities.
         </p>

@@ -27,7 +27,7 @@ const Properties = () => {
       type: "For Rent",
     },
     {
-      id: "Britton’s-Residence",
+      id: "Brittons-Residence",
       image: HeroImage3,
       title: "Britton’s Residence",
       description: "A harmonious blend of contemporary design and functional living spaces.",

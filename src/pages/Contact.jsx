@@ -24,8 +24,7 @@ const ContactUs = () => {
       <section className="py-12 bg-white text-center">
         <h2 className="text-3xl font-bold text-[#7B1C27] mb-4">Get in touch</h2>
         <p className="text-gray-700 mb-8">
-          Leave us a message by filling in the form below and we will get back
-          to you as soon as possible.
+        Whether you have a question, need advice, or want to book a viewing, our team is here to help. Get in touch today and start your real estate journey with Premium Star Realty.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto">

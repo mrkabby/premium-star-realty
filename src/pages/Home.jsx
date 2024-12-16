@@ -54,7 +54,7 @@ const HomePage = () => {
         <section className="py-12 px-6">
           <h3 className="text-center text-2xl font-thin text-[#7B1C27] mb-6">
             This is your chance to move into a home that is based on the
-            foundation of privacy and exclusiveness. Pristine Gardens is truly a
+            foundation of privacy and exclusivenes Our Community 18 Property is truly a
             one-of-its-kind opportunity for you to reside in an elite community
             of like-minded individuals surrounded by graceful luxury and
             matchless comfort.
@@ -97,28 +97,25 @@ const HomePage = () => {
         <section className="py-12 px-6 bg-gray-50">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <h4 className="text-xl font-bold text-[#7B1C27]">Accessible</h4>
+              <h4 className="text-xl font-bold text-[#7B1C27]">Transparent Process</h4>
               <p className="text-gray-700 leading-relaxed">
-                Pristine Gardens offers easy access to key city locations like
-                Celebrity Golf Course, Junction Mall, and Sakumono Beach.
+              Clear communication and hassle-free transactions.
               </p>
             </div>
             <div>
               <h4 className="text-xl font-bold text-[#7B1C27]">
-                Impeccable Style
+              Expert Guidance
               </h4>
               <p className="text-gray-700 leading-relaxed">
-                Bright, light-filled spaces. Practical livability with a
-                contemporary appeal and sophisticated feel.
-              </p>
+              Tailored advice from experienced real estate professionals. </p>
             </div>
             <div>
               <h4 className="text-xl font-bold text-[#7B1C27]">
-                Bespoke Design
+              Extensive Portfolio
               </h4>
               <p className="text-gray-700 leading-relaxed">
-                Thoughtfully designed interiors reflect commitment to functional
-                and utility-focused elegance.
+              A wide range of properties across prime locations in Ghana.
+
               </p>
             </div>
           </div>
