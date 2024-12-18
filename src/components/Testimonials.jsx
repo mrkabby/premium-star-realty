@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SlideImage1 from "../assets/highlights/mnkk_147.jpg";
+import SlideImage1 from "../assets/highlights/MNKK_147.jpg";
 
 const TestimonialSection = () => {
   const testimonials = [
