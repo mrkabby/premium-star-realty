@@ -61,7 +61,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="p-2 rounded bg-blue-600 hover:bg-blue-700 transition text-white"
+              className="p-2 rounded bg-[#3fc7d8] hover:bg-blue-700 transition text-white"
             >
               Subscribe
             </button>
