@@ -102,7 +102,7 @@ const Properties = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-12 bg-[#7B1C27] text-white text-center">
+      <section className="py-12 bg-[#3fc7d8] text-white text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to find your dream property?</h2>
         <p className="text-lg">
           Contact us today to learn more about our luxurious properties and investment opportunities.

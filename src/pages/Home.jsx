@@ -1,5 +1,5 @@
 import React from "react";
-import Image1 from "../assets/highlights/mnkk_100.jpg";
+import Image1 from "../assets/highlights/mnkk_101.jpg";
 import Image2 from "../assets/highlights/mnkk_115.jpg";
 import Image3 from "../assets/highlights/mnkk_105.jpg";
 import LeroImage1 from "../assets/highlights/mnkk_180.jpg";
