@@ -1,7 +1,7 @@
 import React from "react";
-import HeroImage1 from "../../assets/highlights/mnkk_102.jpg";
-import HeroImage2 from "../../assets/highlights/mnkk_109.jpg";
-import HeroImage3 from "../../assets/highlights/mnkk_108.jpg";
+import HeroImage1 from "../../assets/highlights/MNKK_102.jpg";
+import HeroImage2 from "../../assets/highlights/MNKK_109.jpg";
+import HeroImage3 from "../../assets/highlights/MNKK_108.jpg";
 
 const PristineGardens = () => {
   return (

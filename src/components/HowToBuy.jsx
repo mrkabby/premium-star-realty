@@ -1,5 +1,5 @@
 import React from "react";
-import HowToBuyImage from "../assets/bed.jpg"; // Replace with the correct image path
+import HowToBuyImage from "../assets/highlights/MNKK_145.jpg"; 
 
 const HowToBuy = () => {
   return (
@@ -35,7 +35,7 @@ const HowToBuy = () => {
           <div className="flex justify-center">
             <a
               href="tel:+1234567890"
-              className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+              className="px-6 py-3 bg-[#3fc7d8] text-white rounded hover:bg-[#3fc7d8] transition"
             >
               Let’s talk
             </a>

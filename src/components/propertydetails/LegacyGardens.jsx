@@ -1,7 +1,7 @@
 import React from "react";
-import HeroImage1 from "../../assets/highlights/mnkk_100.jpg";
-import HeroImage2 from "../../assets/highlights/mnkk_100.jpg";
-import HeroImage3 from "../../assets/highlights/mnkk_100.jpg";
+import HeroImage1 from "../../assets/highlights/MNKK_100.jpg";
+import HeroImage2 from "../../assets/highlights/MNKK_100.jpg";
+import HeroImage3 from "../../assets/highlights/MNKK_100.jpg";
 
 const LegacyGardens = () => {
   return (

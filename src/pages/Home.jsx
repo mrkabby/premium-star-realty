@@ -1,10 +1,10 @@
 import React from "react";
 import Image1 from "../assets/outside.jpg";
-import Image2 from "../assets/highlights/mnkk_115.jpg";
-import Image3 from "../assets/highlights/mnkk_105.jpg";
-import LeroImage1 from "../assets/highlights/mnkk_180.jpg";
-import LeroImage2 from "../assets/highlights/mnkk_120.jpg";
-import LeroImage3 from "../assets/highlights/mnkk_130.jpg";
+import Image2 from "../assets/highlights/MNKK_115.jpg";
+import Image3 from "../assets/highlights/MNKK_105.jpg";
+import LeroImage1 from "../assets/highlights/MNKK_180.jpg";
+import LeroImage2 from "../assets/highlights/MNKK_120.jpg";
+import LeroImage3 from "../assets/highlights/MNKK_130.jpg";
 import HeroSection from "../components/HeroSection";
 import ContactForm from "../components/TalkToUs";
 

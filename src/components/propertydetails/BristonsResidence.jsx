@@ -1,10 +1,10 @@
 import React from "react";
-import HeroImage1 from "../../assets/highlights/mnkk_187.jpg";
-import HeroImage2 from "../../assets/highlights/mnkk_162.jpg";
-import HeroImage3 from "../../assets/highlights/mnkk_150.jpg";
-import HeroImage4 from "../../assets/highlights/mnkk_166.jpg";
-import HeroImage5 from "../../assets/highlights/mnkk_171.jpg";
-import HeroImage6 from "../../assets/highlights/mnkk_130.jpg";
+import HeroImage1 from "../../assets/highlights/MNKK_187.jpg";
+import HeroImage2 from "../../assets/highlights/MNKK_162.jpg";
+import HeroImage3 from "../../assets/highlights/MNKK_150.jpg";
+import HeroImage4 from "../../assets/highlights/MNKK_166.jpg";
+import HeroImage5 from "../../assets/highlights/MNKK_171.jpg";
+import HeroImage6 from "../../assets/highlights/MNKK_130.jpg";
 
 const BristonsResidence = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import HeroImage from "../assets/highlights/mnkk_180.jpg"; // Replace with the correct hero image path
-import VisionImage from "../assets/highlights/mnkk_190.jpg"; // Replace with the vision section image path
+import HeroImage from "../assets/highlights/MNKK_180.jpg"; 
+import VisionImage from "../assets/highlights/MNKK_190.jpg"; 
 import AboutSection from "../components/AboutUs";
 import TestimonialSection from "../components/Testimonials";
 
