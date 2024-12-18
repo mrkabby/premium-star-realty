@@ -1,7 +1,7 @@
 import React from "react";
-import HeroImage1 from "../assets/highlights/MNKK_100.jpg";
-import HeroImage2 from "../assets/highlights/MNKK_102.jpg";
-import HeroImage3 from "../assets/highlights/MNKK_104.jpg";
+import HeroImage1 from "../assets/highlights/MNKK_102.jpg";
+import HeroImage2 from "../assets/Peva/NKANSA_52.jpg";
+import HeroImage3 from "../assets/Rochester House Community 20/NKANSA_53.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Properties = () => {
@@ -9,29 +9,29 @@ const Properties = () => {
 
   const properties = [
     {
-      id: "Pristine-Gardens",
+      id: "The-Daniel-Duplex",
       image: HeroImage1,
-      title: "Pristine Gardens",
+      title: "The Daniel Duplex",
       description: "Luxury townhouses nestled in a serene environment with top-notch amenities.",
-      location: "Sakumono, Accra",
-      price: "$36,021",
-      type: "For Sale",
+      location: "Community 18, Accra",
+      price: "$2,500",
+      type: "For rent",
     },
     {
-      id: "Legacy-Square",
+      id: "Six-Zigma-Court",
       image: HeroImage2,
-      title: "Legacy Square",
+      title: "Six Zigma Court",
       description: "State-of-the-art apartments offering a blend of modernity and elegance.",
-      location: "Airport Residential, Accra",
-      price: "$50,200",
+      location: "Community 20, Accra",
+      price: "$1,400",
       type: "For Rent",
     },
     {
-      id: "Brittons-Residence",
+      id: "Rochester-House",
       image: HeroImage3,
-      title: "Britton’s Residence",
+      title: "Rochester House ",
       description: "A harmonious blend of contemporary design and functional living spaces.",
-      location: "East Legon, Accra",
+      location: "community 20, Accra",
       price: "$100,200",
       type: "For Sale",
     },

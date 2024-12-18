@@ -1,11 +1,9 @@
 import React from "react";
-import Image from "../assets/highlights/MNKK_102.jpg"
-
-
+import Image from "../assets/highlights/MNKK_102.jpg";
 
 const ContactForm = () => {
   return (
-    <section className="py-12 px-6 bg-gray-100">
+    <section className="py-12 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Images Section */}
         <div className="space-y-4">
@@ -14,7 +12,6 @@ const ContactForm = () => {
             alt="Contact 1"
             className="rounded-lg shadow-lg"
           />
-         
         </div>
 
         {/* Form Section */}
@@ -39,17 +36,11 @@ const ContactForm = () => {
               className="p-3 rounded border border-gray-300 w-full"
             />
             <div className="grid grid-cols-2 gap-4">
-              <select
+              <input
+                type="text"
+                placeholder="Country Code (e.g., +233)"
                 className="p-3 rounded border border-gray-300 w-full"
-                defaultValue=""
-              >
-                <option value="" disabled>
-                  Country Code
-                </option>
-                <option value="+233">+233</option>
-                <option value="+234">+234</option>
-                {/* Add more country codes here */}
-              </select>
+              />
               <input
                 type="text"
                 placeholder="Phone"
@@ -61,7 +52,6 @@ const ContactForm = () => {
               className="p-3 rounded border border-gray-300 w-full"
               rows="5"
             ></textarea>
-           
             <button
               type="submit"
               className="px-6 py-3 bg-[#3fc7d8] text-white rounded hover:bg-[#7B1C27] transition w-full"
@@ -70,7 +60,6 @@ const ContactForm = () => {
             </button>
           </form>
         </div>
-        
       </div>
     </section>
   );

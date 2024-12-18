@@ -7,10 +7,12 @@ import Properties from "../src/pages/Properties";
 import ContactUs from "../src/pages/Contact"; 
 import Footer from "../src/components/Footer"; 
 import HowToBuy from "./components/HowToBuy";
-import PristineGardens from "./components/propertydetails/PristineGardens";
-import LegacyGardens from "./components/propertydetails/LegacyGardens";
-import BristonsResidence from "./components/propertydetails/BristonsResidence";
+
+
 import SearchResults from "./pages/SearchResults";
+import RochesterHouse from "./components/propertydetails/RochesterHouse ";
+import SixZigmaCourt from "./components/propertydetails/SixZigmaCourt";
+import TheDanielDuplex from "./components/propertydetails/TheDanielDuplex";
 
 
 const App = () => {
@@ -26,9 +28,9 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/properties" element={<Properties />} />
-        <Route path="/properties/pristine-gardens" element={<PristineGardens />} />
-        <Route path="/properties/legacy-square" element={<LegacyGardens />} />
-        <Route path="/properties/brittons-residence" element={<BristonsResidence />} />
+        <Route path="/properties/Rochester-House" element={<RochesterHouse />} />
+        <Route path="/properties/Six-Zigma-Court" element={<SixZigmaCourt/>} />
+        <Route path="/properties/The-Daniel-Duplex" element={<TheDanielDuplex />} />
         <Route path="/search" element={<SearchResults />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/how-to-buy" element={<HowToBuy />} />
