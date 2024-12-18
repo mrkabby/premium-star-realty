@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import HeroImage1 from "../assets/bedroom.jpg";
-import HeroImage2 from "../assets/bed.jpg";
-import HeroImage3 from "../assets/pathway.jpg";
+import HeroImage1 from "../assets/highlights/mnkk_97.jpg";
+import HeroImage2 from "../assets/highlights/mnkk_98.jpg";
+import HeroImage3 from "../assets/highlights/mnkk_99.jpg";
 import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "../assets/shelf.jpg"
-import Image1 from "../assets/bed.jpg"
+import Image from "../assets/highlights/mnkk_102.jpg"
+
 
 
 const ContactForm = () => {

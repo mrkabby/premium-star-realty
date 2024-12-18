@@ -1,7 +1,10 @@
 import React from "react";
-import HeroImage1 from "../../assets/bedroom.jpg";
-import HeroImage2 from "../../assets/bed.jpg";
-import HeroImage3 from "../../assets/pathway.jpg";
+import HeroImage1 from "../../assets/highlights/mnkk_187.jpg";
+import HeroImage2 from "../../assets/highlights/mnkk_162.jpg";
+import HeroImage3 from "../../assets/highlights/mnkk_150.jpg";
+import HeroImage4 from "../../assets/highlights/mnkk_166.jpg";
+import HeroImage5 from "../../assets/highlights/mnkk_171.jpg";
+import HeroImage6 from "../../assets/highlights/mnkk_130.jpg";
 
 const BristonsResidence = () => {
   return (
@@ -21,7 +24,7 @@ const BristonsResidence = () => {
           Gallery
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {[HeroImage1, HeroImage2, HeroImage3].map((image, index) => (
+          {[HeroImage1, HeroImage2, HeroImage3, HeroImage4, HeroImage5, HeroImage6].map((image, index) => (
             <img
               key={index}
               src={image}

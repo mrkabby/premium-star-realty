@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import HeroImage1 from "../assets/bedroom.jpg";
-import HeroImage2 from "../assets/bed.jpg";
-import HeroImage3 from "../assets/pathway.jpg";
+import HeroImage1 from "../assets/highlights/mnkk_100.jpg";
+import HeroImage2 from "../assets/highlights/mnkk_100.jpg";
+import HeroImage3 from "../assets/highlights/mnkk_100.jpg";
 
 const projects = [
   {

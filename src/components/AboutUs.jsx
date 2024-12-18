@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import TopImage1 from "../assets/shelf.jpg";
+import TopImage1 from "../assets/highlights/mnkk_109.jpg";
 
-import BottomImage1 from "../assets/bedroom.jpg";
-import SlideImage1 from "../assets/bed.jpg";
-import SlideImage2 from "../assets/shelf.jpg";
-import SlideImage3 from "../assets/pathway.jpg";
+import BottomImage1 from "../assets/highlights/mnkk_127.jpg";
+import SlideImage1 from "../assets/highlights/mnkk_120.jpg";
+import SlideImage2 from "../assets/highlights/mnkk_129.jpg";
+import SlideImage3 from "../assets/highlights/mnkk_193.jpg";
 
 
 const AboutSection = () => {
