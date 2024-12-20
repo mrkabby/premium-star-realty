@@ -29,7 +29,7 @@ const Footer = () => {
             House No. 14, First Close, <br />
             Airport Residential, Accra
           </p>
-          <p className="text-sm ">+233 277 890 000</p>
+          <p className="text-sm ">+233 24 338 0128</p>
           <p className="text-sm ">sales@premiumstarrealty.com</p>
         </div>
 
@@ -37,11 +37,11 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start space-y-2">
           <h3 className="text-lg font-semibold">NAVIGATE</h3>
           <ul className="space-y-2 text-sm ">
-            <li>Britton’s Residence</li>
-            <li>One Elm</li>
-            <li>Pristine Gardens</li>
-            <li>233 Boulevard</li>
-            <li>Legacy Square</li>
+            <li>The Daniel Duplex</li>
+            <li>Six Zigma Court </li>
+            <li>Rochester House</li>
+            <li>Anowaa Gardens</li>
+            
           </ul>
         </div>
 
