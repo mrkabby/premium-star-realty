@@ -40,7 +40,7 @@ const Footer = () => {
             <li>The Daniel Duplex</li>
             <li>Six Zigma Court </li>
             <li>Rochester House</li>
-            <li>Anowaa Gardens</li>
+            <li>Peregrino Place</li>
             
           </ul>
         </div>

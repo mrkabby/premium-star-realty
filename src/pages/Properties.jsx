@@ -2,6 +2,8 @@ import React from "react";
 import HeroImage1 from "../assets/highlights/MNKK_102.jpg";
 import HeroImage2 from "../assets/Peva/NKANSA_52.jpg";
 import HeroImage3 from "../assets/Rochester House Community 20/NKANSA_53.jpg";
+import Image from "../assets/Pregrino/NKANSA_227.jpg"
+
 import { useNavigate } from "react-router-dom";
 
 const Properties = () => {
@@ -34,6 +36,15 @@ const Properties = () => {
       location: "community 20, Accra",
       price: "$100,200",
       type: "For Sale",
+    },
+    {
+      id: "Peregrino-Place",
+      image: Image,
+      title: "Peregrino Place ",
+      description: "A beautiful destination for the perfect honeymoon or weekend getaway in the Ayi Mensah Valley Walk up the Aburi mountains for breakfast at The Peduase Valley Resort Drive to the Safari Valley for the experience of a lifetime",
+      location: "Aburi",
+      price: "$100,200",
+      type: "For Rent",
     },
   ];
 
