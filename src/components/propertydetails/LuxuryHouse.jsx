@@ -1,34 +1,44 @@
 import React, { useState, useEffect } from "react";
-import Image1 from "../../assets/highlights/MNKK_187.jpg";
-import Image2 from "../../assets/highlights/MNKK_162.jpg";
-import Image3 from "../../assets/highlights/MNKK_150.jpg";
-import Image4 from "../../assets/highlights/MNKK_166.jpg";
-import Image5 from "../../assets/highlights/MNKK_171.jpg";
-import Image6 from "../../assets/highlights/MNKK_130.jpg";
-// import VideoFile from "../../assets/videos/property-tour.mp4";
 
-const TheDanielDuplex= () => {
+import Image1 from "../../assets/Community18/Outside3.jpg";
+import Image2 from "../../assets/Community18/Outside1.jpg";
+import Image3 from "../../assets/Community18/Outside2.jpg";
+import Image4 from "../../assets/Community18/Inside1.jpg";
+import Image5 from "../../assets/Community18/Inside2.jpg";
+import Image6 from "../../assets/Community18/Inside3.jpg";
+import Image7 from "../../assets/Community18/Inside4.jpg";
+import Image8 from "../../assets/Community18/Inside5.jpg";
+import Image9 from "../../assets/Community18/Inside6.jpg";
+import Image10 from "../../assets/Community18/Inside7.jpg";
+import Image11 from "../../assets/Community18/Inside8.jpg";
+
+
+const LuxuryHouse = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const property = {
-    id: 1,
-    title: "The Daniel Duplex",
+
+    title: "Luxury House",
     description:
-      "Discover the perfect blend of modern elegance and natural beauty at Willow Creek Residences. Designed for comfort, built for luxury.",
-    address: "8502 Preston Rd. Inglewood, Maine 98380",
+      "We are pleased to present newly built luxury 4 bedroom houses for sale at Spintex Community 18. These stunning properties offer a perfect blend of comfort, style, and convenience.",
+    address: "Spintex Community 18, Accra",
     specifications: [
-      "4 bed rooms",
-      "2 bath rooms",
-      "1 kitchen",
-      "2 garage",
+      "4 spacious bedrooms with en-suite facilities",
+      "5 modern washrooms",
+      "Spacious living room perfect for relaxation and entertainment",
+      "2 poly tanks for water storage",
+      "Built-in wardrobes in all bedrooms",
+      "Solar power lights, fans, and refrigerators for a sustainable living",
+      " Water heaters in all bedrooms for a relaxing bath",
     ],
     neighborhood: [
-      "Willow Creek High School - 1 km away",
-      "Bus stops and metro stations within 500m",
-      "Willow Park, shopping malls, restaurant",
+      "Community 18 KFC",
+      "Amadia Shopping Center",
+      "Numerous Food Joints",
+      
     ],
-    price: "$150,000",
-    images: [Image1, Image2, Image3, Image4, Image5, Image6],
+    investment: "These luxury houses offer a great investment opportunity, with a potential rental income of between USD 1000 to USD 1,500 per month.",
+    images: [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11,],
   };
 
   // Automatically switch images every 5 seconds
@@ -76,14 +86,15 @@ const TheDanielDuplex= () => {
             ))}
           </ul>
 
-          <p className="text-2xl font-bold text-[#7B1C27] mt-6">
-            Price: {property.price}
+          <p className="text-2xl font mt-6">
+          Investment Opportunity
+          : {property.investment}
           </p>
           <button
             className="mt-4 px-6 py-3 bg-[#3fc7d8] text-white rounded hover:bg-[#5e141b] transition"
             onClick={() => window.location.href =
-              "https://wa.me/233243380128?text=Hello%2C%20I%27m%20interested%20in%20The%20Daniel%2Duplex."
-          }
+                "https://wa.me/233243380128?text=Hello%2C%20I%27m%20interested%20in%20Luxury%20House."
+            }
           >
             Contact Owner
           </button>
@@ -138,4 +149,4 @@ const TheDanielDuplex= () => {
   );
 };
 
-export default TheDanielDuplex;
+export default LuxuryHouse;

@@ -14,6 +14,8 @@ import RochesterHouse from "./components/propertydetails/RochesterHouse ";
 import SixZigmaCourt from "./components/propertydetails/SixZigmaCourt";
 import TheDanielDuplex from "./components/propertydetails/TheDanielDuplex";
 import PeregrinoPlace from "./components/propertydetails/Peregrino";
+import LuxuryHouse from "./components/propertydetails/LuxuryHouse";
+import BookingPage from "./pages/BookingPage";
 
 
 const App = () => {
@@ -33,7 +35,9 @@ const App = () => {
         <Route path="/properties/Six-Zigma-Court" element={<SixZigmaCourt/>} />
         <Route path="/properties/The-Daniel-Duplex" element={<TheDanielDuplex />} />
         <Route path="/properties/Peregrino-Place" element={<PeregrinoPlace/>} />
+        <Route path="/properties/Luxury-House" element={<LuxuryHouse/>} />
         <Route path="/search" element={<SearchResults />} />
+        <Route path="/booking/:id" element={<BookingPage />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/how-to-buy" element={<HowToBuy />} />
           </Routes>

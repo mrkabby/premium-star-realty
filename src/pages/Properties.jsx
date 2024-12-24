@@ -1,10 +1,11 @@
 import React from "react";
-import HeroImage1 from "../assets/highlights/MNKK_102.jpg";
-import HeroImage2 from "../assets/Peva/NKANSA_52.jpg";
-import HeroImage3 from "../assets/Rochester House Community 20/NKANSA_53.jpg";
-import Image from "../assets/Pregrino/NKANSA_227.jpg"
-
 import { useNavigate } from "react-router-dom";
+
+import DanImage1 from "../assets/highlights/MNKK_102.jpg";
+import PevaImage2 from "../assets/Peva/NKANSA_52.jpg";
+import RochImage3 from "../assets/Rochester House Community 20/NKANSA_53.jpg";
+import PereImage from "../assets/Pregrino/NKANSA_227.jpg";
+import Com18Image from "../assets/Community18/Outside3.jpg";
 
 const Properties = () => {
   const navigate = useNavigate();
@@ -12,39 +13,53 @@ const Properties = () => {
   const properties = [
     {
       id: "The-Daniel-Duplex",
-      image: HeroImage1,
+      image: DanImage1,
       title: "The Daniel Duplex",
-      description: "Luxury townhouses nestled in a serene environment with top-notch amenities.",
+      description:
+        "Luxury townhouses nestled in a serene environment with top-notch amenities.",
       location: "Community 18, Accra",
       price: "$2,500",
-      type: "For rent",
+      type: "For Rent",
     },
     {
       id: "Six-Zigma-Court",
-      image: HeroImage2,
+      image: PevaImage2,
       title: "Six Zigma Court",
-      description: "State-of-the-art apartments offering a blend of modernity and elegance.",
+      description:
+        "State-of-the-art apartments offering a blend of modernity and elegance.",
       location: "Community 20, Accra",
       price: "$1,400",
       type: "For Rent",
     },
     {
       id: "Rochester-House",
-      image: HeroImage3,
-      title: "Rochester House ",
-      description: "A harmonious blend of contemporary design and functional living spaces.",
-      location: "community 20, Accra",
+      image: RochImage3,
+      title: "Rochester House",
+      description:
+        "A harmonious blend of contemporary design and functional living spaces.",
+      location: "Community 20, Accra",
       price: "$100,200",
       type: "For Sale",
     },
     {
       id: "Peregrino-Place",
-      image: Image,
-      title: "Peregrino Place ",
-      description: "A beautiful destination for the perfect honeymoon or weekend getaway in the Ayi Mensah Valley Walk up the Aburi mountains for breakfast at The Peduase Valley Resort Drive to the Safari Valley for the experience of a lifetime",
-      location: "Aburi",
+      image: PereImage,
+      title: "Peregrino Place",
+      description:
+        "A beautiful destination for the perfect honeymoon or weekend getaway.",
+      location: "Ayimensah, Kweiman",
       price: "$100,200",
       type: "For Rent",
+    },
+    {
+      id: "Luxury-House",
+      image: Com18Image,
+      title: "Luxury House",
+      description:
+        "Newly built luxury 4-bedroom houses for sale at Spintex Community 18.",
+      location: "Community 18",
+      price: "$100,200",
+      type: "For Sale",
     },
   ];
 
@@ -86,17 +101,22 @@ const Properties = () => {
                 </h3>
                 <p className="text-gray-600 mt-2">{property.description}</p>
                 <p className="mt-4 text-sm text-gray-500">
-                  <i className="fas fa-map-marker-alt mr-2"></i>
-                  {property.location}
+                  📍 {property.location}
                 </p>
                 <p className="mt-4 text-lg font-bold text-[#7B1C27]">
                   {property.price}
                 </p>
                 <button
                   className={`mt-4 px-6 py-2 rounded text-white font-semibold transition ${
-                    property.type === "For Sale" ? "bg-green-500 hover:bg-green-600" : "bg-blue-500 hover:bg-blue-600"
+                    property.type === "For Sale"
+                      ? "bg-green-500 hover:bg-green-600"
+                      : "bg-blue-500 hover:bg-blue-600"
                   }`}
-                  onClick={() => alert(`${property.type === "For Sale" ? "Buying" : "Renting"} ${property.title}`)}
+                  onClick={() =>
+                    navigate(`/booking/${property.id}`, {
+                      state: { property },
+                    })
+                  }
                 >
                   {property.type === "For Sale" ? "Buy Now" : "Rent Now"}
                 </button>
@@ -120,7 +140,7 @@ const Properties = () => {
         </p>
         <button
           className="mt-6 px-8 py-3 bg-white text-[#7B1C27] font-bold rounded hover:bg-gray-100 transition"
-          onClick={() => navigate(  "/contact")}
+          onClick={() => navigate("/contact")}
         >
           Contact Us
         </button>
