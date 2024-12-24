@@ -25,15 +25,16 @@ const BookingPage = () => {
     setIsSubmitting(true);
   
     const templateParams = {
-      property_title: property.title,
-      property_description: property.description,
-      property_location: property.location,
-      property_price: property.price,
-      user_name: formData.fullName,
-      user_email: formData.email,
-      user_phone: formData.phone,
-      user_message: formData.message,
-    };
+        property_title: property.title,
+        property_description: property.description,
+        property_location: property.location,
+        property_price: property.price,
+        user_name: formData.fullName,
+        user_email: formData.email,
+        user_phone: formData.phone,
+        user_message: formData.message,
+      };
+      
   
     try {
       // Send email to the property owner
