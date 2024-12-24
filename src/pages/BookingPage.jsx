@@ -53,6 +53,9 @@ const BookingPage = () => {
           user_name: formData.fullName,
           user_email: formData.email,
           property_title: property.title,
+          property_description: property.description,
+          property_location: property.location,
+          property_price: property.price,
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );

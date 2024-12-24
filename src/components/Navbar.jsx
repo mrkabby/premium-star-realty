@@ -1,18 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png"; // Replace with your actual logo path
+import Logo from "../assets/logo.png";
+import Search from "../components/Search"; 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const handleSearch = () => {
-    if (searchQuery.trim()) {
-      // Perform search logic here
-      alert(`Searching for: ${searchQuery}`);
-    }
-  };
 
   return (
     <nav className="bg-white shadow-md">
@@ -29,46 +22,11 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <ul className="hidden lg:flex space-x-6 text-gray-700">
-          <li>
-            <Link
-              to="/"
-              className="hover:underline hover:text-[#7B1C27] transition-colors duration-200"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className="hover:underline hover:text-[#7B1C27] transition-colors duration-200"
-            >
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/properties"
-              className="hover:underline hover:text-[#7B1C27] transition-colors duration-200"
-            >
-              Properties
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/how-to-buy"
-              className="hover:underline hover:text-[#7B1C27] transition-colors duration-200"
-            >
-              How to Buy
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className="hover:underline hover:text-[#7B1C27] transition-colors duration-200"
-            >
-              Contact
-            </Link>
-          </li>
+          <li><Link to="/" className="hover:underline hover:text-[#7B1C27] transition-colors duration-200">Home</Link></li>
+          <li><Link to="/about" className="hover:underline hover:text-[#7B1C27] transition-colors duration-200">About Us</Link></li>
+          <li><Link to="/properties" className="hover:underline hover:text-[#7B1C27] transition-colors duration-200">Properties</Link></li>
+          <li><Link to="/how-to-buy" className="hover:underline hover:text-[#7B1C27] transition-colors duration-200">How to Buy</Link></li>
+          <li><Link to="/contact" className="hover:underline hover:text-[#7B1C27] transition-colors duration-200">Contact</Link></li>
         </ul>
 
         {/* Icons Section */}
@@ -120,72 +78,18 @@ const Navbar = () => {
       {/* Dropdown Menu */}
       {isMenuOpen && (
         <ul className="lg:hidden bg-white shadow-md rounded mt-2 space-y-4 px-6 py-4 text-gray-700">
-          <li>
-            <Link
-              to="/"
-              className="block hover:underline hover:text-[#7B1C27] transition-colors duration-200"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className="block hover:underline hover:text-[#7B1C27] transition-colors duration-200"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/properties"
-              className="block hover:underline hover:text-[#7B1C27] transition-colors duration-200"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Properties
-            </Link>
-          </li>
-          
-          <li>
-            <Link
-              to="/how-to-buy"
-              className="block hover:underline hover:text-[#7B1C27] transition-colors duration-200"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              How to Buy
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className="block hover:underline hover:text-[#7B1C27] transition-colors duration-200"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </Link>
-          </li>
+          <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+          <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link></li>
+          <li><Link to="/properties" onClick={() => setIsMenuOpen(false)}>Properties</Link></li>
+          <li><Link to="/how-to-buy" onClick={() => setIsMenuOpen(false)}>How to Buy</Link></li>
+          <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
         </ul>
       )}
 
-      {/* Search Bar */}
+      {/* Search Component */}
       {isSearchOpen && (
-        <div className="px-6 py-4 bg-gray-100 flex items-center space-x-4">
-          <input
-            type="text"
-            placeholder="Search..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyPress={(e) => e.key === "Enter" && handleSearch()}
-            className="flex-grow p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
-          />
-          <button
-            onClick={handleSearch}
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-          >
-            Search
-          </button>
+        <div className="absolute top-16 left-0 right-0 bg-white shadow-lg z-50">
+          <Search onClose={() => setIsSearchOpen(false)} />
         </div>
       )}
     </nav>
