@@ -32,20 +32,20 @@ const ContactUs = () => {
           <div>
             <h3 className="text-lg font-semibold text-[#7B1C27]">ADDRESS</h3>
             <p className="text-gray-600 mt-2">
-              House No. 14, First Close, Airport Residential, Accra
+          Spintex Kotobabi, Premium Star Quality Group, Accra
             </p>
           </div>
 
           {/* Phone */}
           <div>
             <h3 className="text-lg font-semibold text-[#7B1C27]">CALL</h3>
-            <p className="text-gray-600 mt-2">+233 27 789 0000</p>
+            <p className="text-gray-600 mt-2">+233 24 338 0128</p>
           </div>
 
           {/* Email */}
           <div>
             <h3 className="text-lg font-semibold text-[#7B1C27]">EMAIL</h3>
-            <p className="text-gray-600 mt-2">info@quaorealty.com</p>
+            <p className="text-gray-600 mt-2">sales@premiumstarrealty.com</p>
           </div>
         </div>
       </section>
