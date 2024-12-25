@@ -5,6 +5,16 @@ import Image3 from "../../assets/Peva/NKANSA_46.jpg";
 import Image4 from "../../assets/Peva/NKANSA_31.jpg";
 import Image5 from "../../assets/Peva/NKANSA_42.jpg";
 import Image6 from "../../assets/Peva/NKANSA_22.jpg";
+import Image7 from "../../assets/Peva/NKANSA_22.jpg";
+import Image8 from "../../assets/Peva/NKANSA_23.jpg";
+import Image9 from "../../assets/Peva/NKANSA_10.jpg";
+import Image10 from "../../assets/Peva/NKANSA_6.jpg";
+import Image11 from "../../assets/Peva/NKANSA_18.jpg";
+import Image12 from "../../assets/Peva/NKANSA_26.jpg";
+import Image13 from "../../assets/Peva/NKANSA_37.jpg";
+import Image14 from "../../assets/Peva/NKANSA_46.jpg";
+import Image15 from "../../assets/Peva/NKANSA_43.jpg";
+
 
 
 const SixZigmacourt= () => {
@@ -28,7 +38,7 @@ const SixZigmacourt= () => {
       "Willow Park, shopping malls, restaurant",
     ],
     price: "$150,000",
-    images: [Image1, Image2, Image3, Image4, Image5, Image6],
+    images: [Image1, Image2, Image3, Image4, Image5, Image6,Image7, Image8, Image9, Image10, Image11, Image12,Image13, Image14, Image15 ],
   };
 
   // Automatically switch images every 5 seconds
@@ -80,7 +90,7 @@ const SixZigmacourt= () => {
             Price: {property.price}
           </p>
           <button
-            className="mt-4 px-6 py-3 bg-[#7B1C27] text-white rounded hover:bg-[#5e141b] transition"
+            className="mt-4 px-6 py-3 bg-[#3fc7d8] text-white rounded hover:bg-[#5e141b] transition"
             onClick={() => window.location.href =
               "https://wa.me/233243380128?text=Hello%2C%20I%27m%20interested%20in%20Six%20Zigma%20Court."
           }

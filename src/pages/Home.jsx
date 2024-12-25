@@ -1,5 +1,5 @@
 import React from "react";
-import Image1 from "../assets/outside.jpg";
+import Image1 from "../assets/Pregrino/NKANSA_170.jpg";
 import VideoFile from "../assets/video/Anowaa.mp4";
 import Image3 from "../assets/Peva/NKANSA_52.jpg";
 import LeroImage1 from "../assets/highlights/MNKK_180.jpg";

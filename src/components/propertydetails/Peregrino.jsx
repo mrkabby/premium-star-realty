@@ -3,6 +3,15 @@ import React, { useState, useEffect } from "react";
 import HeroImage1 from "../../assets/Pregrino/NKANSA_70.jpg";
 import HeroImage2 from "../../assets/Pregrino/NKANSA_61.jpg";
 import HeroImage3 from "../../assets/Pregrino/NKANSA_63.jpg";
+import Image7 from "../../assets/Pregrino/NKANSA_165.jpg";
+import Image8 from "../../assets/Pregrino/NKANSA_179.jpg";
+import Image9 from "../../assets//Pregrino/NKANSA_189.jpg";
+import Image10 from "../../assets/Pregrino/NKANSA_197.jpg";
+import Image11 from "../../assets/Pregrino/NKANSA_203.jpg";
+import Image12 from "../../assets/Pregrino/NKANSA_211.jpg";
+import Image13 from "../../assets/Pregrino/NKANSA_215.jpg";
+import Image14 from "../../assets/Pregrino/NKANSA_225.jpg";
+import Image15 from "../../assets/Pregrino/NKANSA_231.jpg";
 
 const PeregrinoPlace = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,7 +35,7 @@ const PeregrinoPlace = () => {
       "Asenema Falls"
     ],
     price: "$150,000",
-    images: [HeroImage1, HeroImage2, HeroImage3],
+    images: [HeroImage1, HeroImage2, HeroImage3,Image7, Image8, Image9, Image10, Image11, Image12,Image13, Image14, Image15],
   };
 
   // Automatically switch images every 5 seconds

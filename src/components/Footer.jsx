@@ -8,6 +8,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,8 +27,8 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start space-y-2">
           <h3 className="text-lg font-semibold">ADDRESS</h3>
           <p className="text-sm ">
-            House No. 14, First Close, <br />
-            Airport Residential, Accra
+            Spintex Kotobai, <br />
+            Premuim Star Quality Group, Accra
           </p>
           <p className="text-sm ">+233 24 338 0128</p>
           <p className="text-sm ">sales@premiumstarrealty.com</p>
@@ -37,11 +38,46 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start space-y-2">
           <h3 className="text-lg font-semibold">NAVIGATE</h3>
           <ul className="space-y-2 text-sm ">
-            <li>The Daniel Duplex</li>
-            <li>Six Zigma Court </li>
-            <li>Rochester House</li>
-            <li>Peregrino Place</li>
-            
+          <li>
+          <Link
+            to="/properties/The-Daniel-Duplex"
+            className="hover:text-[#3fc7d8] transition-colors"
+          >
+            The Daniel Duplex
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/properties/Six-Zigma-Court"
+            className="hover:text-[#3fc7d8] transition-colors"
+          >
+            Six Zigma Court
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/properties/Rochester-House"
+            className="hover:text-[#3fc7d8] transition-colors"
+          >
+            Rochester House
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/properties/Peregrino-Place"
+            className="hover:text-[#3fc7d8] transition-colors"
+          >
+            Peregrino Place
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/properties/Luxury-House"
+            className="hover:text-[#3fc7d8] transition-colors"
+          >
+            Luxury House
+          </Link>
+        </li>
           </ul>
         </div>
 
@@ -52,16 +88,16 @@ const Footer = () => {
             <input
               type="text"
               placeholder="First name"
-              className="w-full p-2 rounded bg-white text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 rounded bg-white text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3fc7d8]"
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full p-2 rounded bg-white text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 rounded bg-white text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3fc7d8]"
             />
             <button
               type="submit"
-              className="p-2 rounded bg-[#3fc7d8] hover:bg-blue-700 transition text-white"
+              className="p-2 rounded bg-[#3fc7d8] hover:bg-[#3fc7d8] transition text-white"
             >
               Subscribe
             </button>

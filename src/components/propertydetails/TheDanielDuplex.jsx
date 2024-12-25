@@ -5,7 +5,17 @@ import Image3 from "../../assets/highlights/MNKK_150.jpg";
 import Image4 from "../../assets/highlights/MNKK_166.jpg";
 import Image5 from "../../assets/highlights/MNKK_171.jpg";
 import Image6 from "../../assets/highlights/MNKK_130.jpg";
-// import VideoFile from "../../assets/videos/property-tour.mp4";
+import Image7 from "../../assets//highlights/MNKK_130.jpg";
+import Image8 from "../../assets//highlights/MNKK_133.jpg";
+import Image9 from "../../assets//highlights/MNKK_125.jpg";
+import Image10 from "../../assets/highlights/MNKK_129.jpg";
+import Image11 from "../../assets/highlights/MNKK_118.jpg";
+import Image12 from "../../assets/highlights/MNKK_105.jpg";
+import Image13 from "../../assets/highlights/MNKK_178.jpg";
+import Image14 from "../../assets/highlights/MNKK_180.jpg";
+import Image15 from "../../assets/highlights/MNKK_195.jpg";
+
+
 
 const TheDanielDuplex= () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,7 +38,7 @@ const TheDanielDuplex= () => {
       "Willow Park, shopping malls, restaurant",
     ],
     price: "$150,000",
-    images: [Image1, Image2, Image3, Image4, Image5, Image6],
+    images: [Image1, Image2, Image3, Image4, Image5, Image6,Image7, Image8, Image9, Image10, Image11, Image12,Image13, Image14, Image15],
   };
 
   // Automatically switch images every 5 seconds

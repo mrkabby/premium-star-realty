@@ -61,7 +61,7 @@ const ContactUs = () => {
     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faInstagram} className="text-2xl text-black hover:text-gray-700" />
     </a>
-    <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/233243380128" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faWhatsapp} className="text-2xl text-green-500 hover:text-green-600" />
     </a>
     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">

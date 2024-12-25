@@ -34,7 +34,7 @@ const HowToBuy = () => {
           </p>
           <div className="flex justify-center">
             <a
-              href="tel:+1234567890"
+              href="tel:+233243380128"
               className="px-6 py-3 bg-[#3fc7d8] text-white rounded hover:bg-[#3fc7d8] transition"
             >
               Let’s talk
