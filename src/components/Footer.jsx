@@ -12,10 +12,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-800 text-white py-10">
+    <footer className="bg-white text-[#3fc7d8] py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo Section */}
-        <div className="flex flex-col items-center md:items-start space-y-4">
+        <div className="flex flex-col items-center md:items-start space-y-4 ">
           <img
             src={Logo}
             alt="Logo"
@@ -83,17 +83,17 @@ const Footer = () => {
 
         {/* Newsletter Section */}
         <div className="flex flex-col items-center md:items-start space-y-4">
-          <h3 className="text-lg font-semibold pl-5">JOIN OUR NEWSLETTER</h3>
+          <h3 className="text-lg font-semibold pl-5 ">JOIN OUR NEWSLETTER</h3>
           <form className="flex flex-col space-y-4 w-full max-w-xs px-5">
             <input
               type="text"
               placeholder="First name"
-              className="w-full p-2 rounded bg-white text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3fc7d8]"
+              className="w-full p-2 rounded bg-gray-200 text-gray-900  focus:ring- focus:ring-black"
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full p-2 rounded bg-white text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#3fc7d8]"
+              className="w-full p-2 rounded bg-gray-200 text-gray-900  focus:ring-2 focus:ring-black"
             />
             <button
               type="submit"
@@ -112,7 +112,7 @@ const Footer = () => {
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            className=" hover:text-white transition"
+            className=" hover:text-[#3fc7d8] transition"
           >
             <FontAwesomeIcon icon={faFacebook} size="lg" />
           </a>
@@ -120,7 +120,7 @@ const Footer = () => {
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            className=" hover:text-white transition"
+            className=" hover:text-[#3fc7d8] transition"
           >
             <FontAwesomeIcon icon={faTwitter} size="lg" />
           </a>
@@ -128,7 +128,7 @@ const Footer = () => {
             href="https://youtube.com"
             target="_blank"
             rel="noopener noreferrer"
-            className=" hover:text-white transition"
+            className=" hover:text-[#3fc7d8] transition"
           >
             <FontAwesomeIcon icon={faYoutube} size="lg" />
           </a>
@@ -136,7 +136,7 @@ const Footer = () => {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className=" hover:text-white transition"
+            className=" hover:text-[#3fc7d8] transition"
           >
             <FontAwesomeIcon icon={faLinkedin} size="lg" />
           </a>
@@ -144,7 +144,7 @@ const Footer = () => {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className=" hover:text-white transition"
+            className=" hover:text-[#3fc7d8] transition"
           >
             <FontAwesomeIcon icon={faInstagram} size="lg" />
           </a>
