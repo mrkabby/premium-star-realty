@@ -18,7 +18,7 @@ const Properties = () => {
       description:
         "Luxury townhouses nestled in a serene environment with top-notch amenities.",
       location: "Community 18, Accra",
-      price: "$2,500",
+      price: "$50",
       type: "For Rent",
     },
     {
@@ -28,7 +28,7 @@ const Properties = () => {
       description:
         "State-of-the-art apartments offering a blend of modernity and elegance.",
       location: "Community 20, Accra",
-      price: "$1,400",
+      price: "$70",
       type: "For Rent",
     },
     {
@@ -38,7 +38,7 @@ const Properties = () => {
       description:
         "A harmonious blend of contemporary design and functional living spaces.",
       location: "Community 20, Accra",
-      price: "$100,200",
+      price: "$???",
       type: "For Sale",
     },
     {
@@ -48,7 +48,7 @@ const Properties = () => {
       description:
         "A beautiful destination for the perfect honeymoon or weekend getaway.",
       location: "Ayimensah, Kweiman",
-      price: "$100,200",
+      price: "$150",
       type: "For Rent",
     },
     {
@@ -58,7 +58,7 @@ const Properties = () => {
       description:
         "Newly built luxury 4-bedroom houses for sale at Spintex Community 18.",
       location: "Community 18",
-      price: "$100,200",
+      price: "$250,000",
       type: "For Sale",
     },
   ];

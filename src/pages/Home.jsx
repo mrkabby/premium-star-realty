@@ -39,37 +39,45 @@ const HomePage = () => {
 
       {/* Video section */}
       <section className="py-12 px-6">
-  <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-16 lg:px-24 gap-8">
-    <div className="md:w-1/2 w-full">
-      <video
-        controls
-        className="rounded-lg shadow-lg w-full object-cover h-auto md:max-h-[300px]"
-      >
-        <source src={VideoFile} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <div className="md:w-1/2 text-center md:text-left">
-      <h2 className="text-3xl font-bold mb-4">Anowaa Gardens</h2>
-      <p className="text-lg text-gray-700 mb-4">
-        ANOWAA Gardens, a 4-bedroom house with an Outhouse. Gated community with 24-hour security which has easy access to Airport, Palace Mall, Accra Mall, and Spintex Road.
-      </p>
-      <p className="text-gray-600 mb-6">
-        <strong>Location:</strong> East Airport
-      </p>
-      <a
-        href="https://wa.me/233243380128?text=Hello%2C%20I%27m%20interested%20in%20Anowaa%20Gardens."
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-[#3fc7d8] text-white py-2 px-6 rounded hover:bg-blue-700 transition"
-      >
-        Learn More
-      </a>
-    </div>
-  </div>
-</section>
-
-
+        <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-16 lg:px-24 gap-8">
+          <div className="md:w-1/2 w-full">
+            <video
+              controls
+              className="rounded-lg shadow-lg w-full object-cover h-auto md:max-h-[300px]"
+            >
+              <source src={VideoFile} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="md:w-1/2 text-center md:text-left">
+            <h2 className="text-3xl font-bold mb-4 ">Anowaa Gardens</h2>
+            <p className="text-lg text-gray-700 mb-4">
+              ANOWAA Gardens, a 4-bedroom house with an Outhouse. Gated
+              community with 24-hour security which has easy access to Airport,
+              Palace Mall, Accra Mall, and Spintex Road.
+              <div className="text-red-900">
+              <br />
+              $1000 / month Unfurnished
+              <br />
+              $2500/ month Fully furnished
+              <br />
+              $250 a day for 4 bedrooms Fully furnished
+              </div>
+            </p>
+            <p className="text-gray-600 mb-6">
+              <strong>Location:</strong> East Airport
+            </p>
+            <a
+              href="https://wa.me/233243380128?text=Hello%2C%20I%27m%20interested%20in%20Anowaa%20Gardens."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#3fc7d8] text-white py-2 px-6 rounded hover:bg-blue-700 transition"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* About Us Section */}
       <section className="py-12 bg-gray-100">
@@ -77,13 +85,13 @@ const HomePage = () => {
           <div className="md:w-1/2 order-2 md:order-1 mt-6 md:mt-0 text-center md:text-left">
             <h2 className="text-4xl font-bold mb-6">About Us</h2>
             <h3 className="text-3xl font-bold mb-4">IT'S WHERE YOU BELONG</h3>
-            <p className="text-gray-700 mb-4 leading-relaxed">
+            <p className="text-gray-700 mb-4 leading-relaxed px-">
               We are a luxury real estate development and management company.
               Our mission is to develop and invest in luxury properties. We aim
               to create value for homeowners and investors by designing
               innovative products and prioritizing our clients' needs.
             </p>
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-gray-700 mb-6 leading-relaxed px-1">
               Our vision is to become the leading Real Estate Developers in
               Africa and the world.
             </p>
@@ -94,11 +102,11 @@ const HomePage = () => {
               Learn More
             </Link>
           </div>
-          <div className="md:w-1/2 order-1 md:order-2">
+          <div className="md:w-1/2 order-1 md:order-2 ">
             <img
               src={Image1}
               alt="Luxury Building"
-              className="rounded-lg shadow-md w-full"
+              className="rounded-lg shadow-md w-full "
             />
           </div>
         </div>
