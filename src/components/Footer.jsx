@@ -78,6 +78,14 @@ const Footer = () => {
             Luxury House
           </Link>
         </li>
+        <li>
+          <Link
+            to="/properties/Town-House"
+            className="hover:text-[#3fc7d8] transition-colors"
+          >
+            Town House
+          </Link>
+        </li>
           </ul>
         </div>
 

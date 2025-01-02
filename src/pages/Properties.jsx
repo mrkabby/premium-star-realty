@@ -52,6 +52,16 @@ const Properties = () => {
       type: "For Rent",
     },
     {
+      id: "Town-House",
+      image: Com18Image,
+      title: "2 bedroom Townhouse",
+      description:
+        "2 bedroom Townhouse at Ayi Mensah, Oyarifa Park",
+      location: "Ayi Mensah, Oyarifa Park",
+      price: "$150",
+      type: "For Rent",
+    },
+    {
       id: "Luxury-House",
       image: Com18Image,
       title: "Luxury House",
@@ -122,7 +132,7 @@ const Properties = () => {
                 </button>
               </div>
               <button
-                className="absolute bottom-4 right-4 px-4 py-2 bg-[#7B1C27] text-white text-sm font-bold rounded opacity-0 group-hover:opacity-100 transition"
+                className="absolute bottom-4 right-4 px-4 py-2 bg-[#7B1C27] text-white text-sm font-bold rounded  group-hover:opacity-100 transition"
                 onClick={() => navigate(`/properties/${property.id}`)}
               >
                 View

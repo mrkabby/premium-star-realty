@@ -16,6 +16,7 @@ import TheDanielDuplex from "./components/propertydetails/TheDanielDuplex";
 import PeregrinoPlace from "./components/propertydetails/Peregrino";
 import LuxuryHouse from "./components/propertydetails/LuxuryHouse";
 import BookingPage from "./pages/BookingPage";
+import TownHouse from "./components/propertydetails/TownHouse";
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/properties/The-Daniel-Duplex" element={<TheDanielDuplex />} />
         <Route path="/properties/Peregrino-Place" element={<PeregrinoPlace/>} />
         <Route path="/properties/Luxury-House" element={<LuxuryHouse/>} />
+        <Route path="/properties/Town-House" element={<TownHouse/>} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="/booking/:id" element={<BookingPage />} />
             <Route path="/contact" element={<ContactUs />} />
