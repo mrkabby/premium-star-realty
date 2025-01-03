@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from "react";
 import HeroImage1 from "../assets/highlights/MNKK_97.jpg";
-import HeroImage2 from "../assets/highlights/MNKK_98.jpg";
-import HeroImage3 from "../assets/highlights/MNKK_99.jpg";
+import HeroImage2 from "../assets/AspectCourt/outside.jpg";
+import HeroImage3 from "../assets/Peva/NKANSA_52.jpg";
+import HeroImage4 from "../assets/Community18/outside1.jpg";
+import HeroImage5 from "../assets/Pregrino/NKANSA_227.jpg";
+import HeroImage6 from "../assets/Rochester House Community 20/NKANSA_53.jpg";
 import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
   const navigate = useNavigate();
   const images = [
-    HeroImage1, 
+    HeroImage1,
     HeroImage2,
     HeroImage3,
+    HeroImage4,
+    HeroImage5,
+    HeroImage6,
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -31,14 +37,17 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-6 z-10 text-white text-center">
         <h1 className="text-4xl md:text-6xl font-bold">
-        Your Trusted Partner in Finding the Perfect Home
+          Your Trusted Partner in Finding the Perfect Home
         </h1>
         <p className="mt-4 text-lg md:text-xl">
-        Buy, Sell, or Rent Properties with Ease in Ghana
+          Buy, Sell, or Rent Properties with Ease in Ghana
         </p>
-        <button className="mt-6 px-6 py-3 bg-[#3fc7d8] rounded-lg text-white hover:bg-[#a02735] transition duration-300" onClick={() => navigate(`/properties`)}>
+        <button
+          className="mt-6 px-6 py-3 bg-[#3fc7d8] rounded-lg text-white hover:bg-[#a02735] transition duration-300"
+          onClick={() => navigate(`/properties`)}
+        >
           Explore Properties
-        </button > 
+        </button>
       </div>
 
       {/* Indicators */}

@@ -6,6 +6,8 @@ import PevaImage2 from "../assets/Peva/NKANSA_52.jpg";
 import RochImage3 from "../assets/Rochester House Community 20/NKANSA_53.jpg";
 import PereImage from "../assets/Pregrino/NKANSA_227.jpg";
 import Com18Image from "../assets/Community18/Outside3.jpg";
+import AspectCourtImage from "../assets/AspectCourt/outside.jpg";
+import AyimensahImage from "../assets/AyiMensah/road2.jpg";
 
 const Properties = () => {
   const navigate = useNavigate();
@@ -53,7 +55,7 @@ const Properties = () => {
     },
     {
       id: "Town-House",
-      image: Com18Image,
+      image: AyimensahImage,
       title: "2 bedroom Townhouse",
       description:
         "2 bedroom Townhouse at Ayi Mensah, Oyarifa Park",
@@ -70,6 +72,16 @@ const Properties = () => {
       location: "Community 18",
       price: "$250,000",
       type: "For Sale",
+    },
+    {
+      id: "Aspect-Court",
+      image: AspectCourtImage,
+      title: "Aspect Court",
+      description:
+        "Fully furnished luxury 3-bedroom houses for rent at Cantoments.",
+      location: "Cantoments close to the US embassy",
+      price: "$300",
+      type: "For Rent",
     },
   ];
 
