@@ -14,8 +14,8 @@ const RochesterHouse = () => {
   
     title: "Rochester House",
     description:
-      "Discover the perfect blend of modern elegance and natural beauty at Willow Creek Residences. Designed for comfort, built for luxury.",
-    address: "8502 Preston Rd. Inglewood, Maine 98380",
+      "Discover the perfect blend of modern elegance and natural beauty at Rochester House. Designed for comfort, built for luxury.",
+    address: "Community 20",
     specifications: [
       "4 bed rooms",
       "2 bath rooms",
@@ -23,11 +23,11 @@ const RochesterHouse = () => {
       "2 garage",
     ],
     neighborhood: [
-      "Willow Creek High School - 1 km away",
-      "Bus stops and metro stations within 500m",
-      "Willow Park, shopping malls, restaurant",
+      "Amadia Shopping Center",
+      "Resturants",
+      "KFC",
     ],
-    price: "$150,000",
+    price: "$???",
     images: [Image1, Image2, Image3, Image4, Image5, Image6],
   };
 
