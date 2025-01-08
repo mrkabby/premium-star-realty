@@ -1,22 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import HeroImage1 from "../../assets/Pregrino/NKANSA_70.jpg";
-import HeroImage2 from "../../assets/Pregrino/NKANSA_61.jpg";
-import HeroImage3 from "../../assets/Pregrino/NKANSA_63.jpg";
-import Image7 from "../../assets/Pregrino/NKANSA_165.jpg";
-import Image8 from "../../assets/Pregrino/NKANSA_179.jpg";
-import Image9 from "../../assets/Pregrino/NKANSA_189.jpg";
-import Image10 from "../../assets/Pregrino/NKANSA_197.jpg";
-import Image11 from "../../assets/Pregrino/NKANSA_203.jpg";
-import Image12 from "../../assets/Pregrino/NKANSA_211.jpg";
-import Image13 from "../../assets/Pregrino/NKANSA_215.jpg";
-import Image14 from "../../assets/Pregrino/NKANSA_225.jpg";
-import Image15 from "../../assets/Pregrino/NKANSA_231.jpg";
-
 const PeregrinoPlace = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [stayOption, setStayOption] = useState("short"); // 'short' or 'long'
+  const [loading, setLoading] = useState(true); // State for loading
+  const [images, setImages] = useState([]);
   const navigate = useNavigate();
 
   const property = {
@@ -36,37 +25,43 @@ const PeregrinoPlace = () => {
       short: "$150 per day (Min. 7 days)",
       long: "$1,500 per month",
     },
-    images: [
-      HeroImage1,
-      HeroImage2,
-      HeroImage3,
-      Image7,
-      Image8,
-      Image9,
-      Image10,
-      Image11,
-      Image12,
-      Image13,
-      Image14,
-      Image15,
-    ],
   };
+
+  // Dynamically generate image paths
+  useEffect(() => {
+    const loadImages = async () => {
+      setLoading(true);
+      const loadedImages = [];
+      for (let i = 60; i <= 237; i++) {
+        try {
+          const image = await import(`../../assets/Pregrino/NKANSA_${i}.jpg`);
+          loadedImages.push(image.default);
+        } catch (error) {
+          console.warn(`Image ../../assets/Pregrino/NKANSA_${i}.jpg not found.`);
+        }
+      }
+      setImages(loadedImages);
+      setLoading(false);
+    };
+
+    loadImages();
+  }, []);
 
   // Automatically switch images every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % property.images.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [property.images.length]);
+  }, [images]);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % property.images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? property.images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
@@ -79,8 +74,7 @@ const PeregrinoPlace = () => {
           address: property.address,
           selectedStay: stayOption,
           price: stayOption === "short" ? property.prices.short : property.prices.long,
-          image : Image14,
-
+          image: images[0], // Use the first image as the default booking image
         },
       },
     });
@@ -88,13 +82,14 @@ const PeregrinoPlace = () => {
 
   return (
     <div className="container mx-auto py-12 px-6">
+      {/* Title */}
       <h1 className="text-4xl font-bold text-[#3fc7d8] mb-4 text-center">
         {property.title}
       </h1>
       <p className="text-gray-700 mb-6">{property.description}</p>
 
+      {/* Property Details */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Property Details */}
         <div>
           <p className="text-lg font-semibold">Address:</p>
           <p className="text-gray-600 mb-4">{property.address}</p>
@@ -151,46 +146,58 @@ const PeregrinoPlace = () => {
 
         {/* Image Carousel */}
         <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
-          <div className="w-full h-96 relative">
-            {property.images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Property Image ${index + 1}`}
-                className={`absolute w-full h-full object-cover transition-opacity duration-1000 ${
-                  index === currentIndex ? "opacity-100" : "opacity-0"
-                }`}
-              />
-            ))}
-          </div>
-          {/* Navigation Controls */}
-          <button
-            onClick={prevSlide}
-            className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white p-2 rounded-full"
-          >
-            ◀
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white p-2 rounded-full"
-          >
-            ▶
-          </button>
+          {loading ? (
+            <div className="flex justify-center items-center h-96">
+              <p className="text-xl font-semibold text-gray-500">Loading Images...</p>
+            </div>
+          ) : (
+            <>
+              <div className="w-full h-96 relative">
+                {images.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    alt={`Property Image ${index + 1}`}
+                    className={`absolute w-full h-full object-cover transition-opacity duration-1000 ${
+                      index === currentIndex ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+                ))}
+              </div>
+              {/* Navigation Controls */}
+              <button
+                onClick={prevSlide}
+                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white p-2 rounded-full"
+              >
+                ◀
+              </button>
+              <button
+                onClick={nextSlide}
+                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white p-2 rounded-full"
+              >
+                ▶
+              </button>
+            </>
+          )}
         </div>
       </div>
-      {/* Image Gallery Section */}
+
+      {/* Image Gallery */}
       <div className="mt-12">
         <h2 className="text-2xl font-semibold mb-4 text-center">Image Gallery</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {property.images.map((image, index) => (
+          {images.map((image, index) => (
             <div key={index} className="overflow-hidden rounded-lg shadow-md">
-              <img src={image} alt={`Gallery Image ${index + 1}`} className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+              <img
+                src={image}
+                alt={`Gallery Image ${index + 1}`}
+                className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+              />
             </div>
           ))}
-        </div> 
+        </div>
+      </div>
     </div>
-    </div>
-    
   );
 };
 
