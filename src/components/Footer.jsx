@@ -2,9 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
-  faTwitter,
+
   faYoutube,
-  faLinkedin,
+ 
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../assets/logo.png";
@@ -31,7 +31,7 @@ const Footer = () => {
             Premuim Star Quality Group, Accra
           </p>
           <p className="text-sm ">+233 24 338 0128</p>
-          <p className="text-sm ">sales@premiumstarrealty.com</p>
+          <p className="text-sm ">premiumstarrealty@gmail.com</p>
         </div>
 
         {/* Navigation Links */}
@@ -117,39 +117,25 @@ const Footer = () => {
       <div className="mt-8 text-center">
         <div className="flex justify-center space-x-6">
           <a
-            href="https://facebook.com"
+            href="https://web.facebook.com/profile.php?id=61571593477120"
             target="_blank"
             rel="noopener noreferrer"
             className=" hover:text-[#3fc7d8] transition"
           >
             <FontAwesomeIcon icon={faFacebook} size="lg" />
           </a>
+          
           <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" hover:text-[#3fc7d8] transition"
-          >
-            <FontAwesomeIcon icon={faTwitter} size="lg" />
-          </a>
-          <a
-            href="https://youtube.com"
+            href="https://www.youtube.com/@PremiumStarRealty"
             target="_blank"
             rel="noopener noreferrer"
             className=" hover:text-[#3fc7d8] transition"
           >
             <FontAwesomeIcon icon={faYoutube} size="lg" />
           </a>
+         
           <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" hover:text-[#3fc7d8] transition"
-          >
-            <FontAwesomeIcon icon={faLinkedin} size="lg" />
-          </a>
-          <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/premiumstarrealty/"
             target="_blank"
             rel="noopener noreferrer"
             className=" hover:text-[#3fc7d8] transition"

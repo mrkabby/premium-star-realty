@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 const PeregrinoPlace = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [stayOption, setStayOption] = useState("short"); // 'short' or 'long'
-  const [loading, setLoading] = useState(true); // State for loading
+  const [stayOption, setStayOption] = useState("short");
+  const [loading, setLoading] = useState(true);
   const [images, setImages] = useState([]);
   const navigate = useNavigate();
 
@@ -27,7 +27,6 @@ const PeregrinoPlace = () => {
     },
   };
 
-  // Dynamically generate image paths
   useEffect(() => {
     const loadImages = async () => {
       setLoading(true);
@@ -37,7 +36,9 @@ const PeregrinoPlace = () => {
           const image = await import(`../../assets/Pregrino/NKANSA_${i}.jpg`);
           loadedImages.push(image.default);
         } catch (error) {
-          console.warn(`Image ../../assets/Pregrino/NKANSA_${i}.jpg not found.`);
+          console.warn(
+            `Image ../../assets/Pregrino/NKANSA_${i}.jpg not found.`
+          );
         }
       }
       setImages(loadedImages);
@@ -47,7 +48,6 @@ const PeregrinoPlace = () => {
     loadImages();
   }, []);
 
-  // Automatically switch images every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -73,8 +73,11 @@ const PeregrinoPlace = () => {
           description: property.description,
           address: property.address,
           selectedStay: stayOption,
-          price: stayOption === "short" ? property.prices.short : property.prices.long,
-          image: images[0], // Use the first image as the default booking image
+          price:
+            stayOption === "short"
+              ? property.prices.short
+              : property.prices.long,
+          image: images[0],
         },
       },
     });
@@ -91,6 +94,7 @@ const PeregrinoPlace = () => {
       {/* Property Details */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
+          {/* Address, Specifications, and Neighborhood */}
           <p className="text-lg font-semibold">Address:</p>
           <p className="text-gray-600 mb-4">{property.address}</p>
 
@@ -134,7 +138,10 @@ const PeregrinoPlace = () => {
           </div>
 
           <p className="text-2xl font-bold text-[#7B1C27] mt-6">
-            Price: {stayOption === "short" ? property.prices.short : property.prices.long}
+            Price:{" "}
+            {stayOption === "short"
+              ? property.prices.short
+              : property.prices.long}
           </p>
           <button
             className="mt-4 px-6 py-3 bg-[#3fc7d8] text-white rounded hover:bg-[#5e141b] transition"
@@ -148,7 +155,9 @@ const PeregrinoPlace = () => {
         <div className="relative w-full overflow-hidden rounded-lg shadow-lg">
           {loading ? (
             <div className="flex justify-center items-center h-96">
-              <p className="text-xl font-semibold text-gray-500">Loading Images...</p>
+              <p className="text-xl font-semibold text-gray-500">
+                Loading Images...
+              </p>
             </div>
           ) : (
             <>
@@ -164,16 +173,15 @@ const PeregrinoPlace = () => {
                   />
                 ))}
               </div>
-              {/* Navigation Controls */}
               <button
                 onClick={prevSlide}
-                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white p-2 rounded-full"
+                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white p-2 rounded-full bg-[#3fc7d8]"
               >
                 ◀
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white p-2 rounded-full"
+                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white p-2 rounded-full bg-[#3fc7d8]"
               >
                 ▶
               </button>
@@ -182,9 +190,13 @@ const PeregrinoPlace = () => {
         </div>
       </div>
 
+      {/* Video Section */}
+
       {/* Image Gallery */}
       <div className="mt-12">
-        <h2 className="text-2xl font-semibold mb-4 text-center">Image Gallery</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-center">
+          Image Gallery
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((image, index) => (
             <div key={index} className="overflow-hidden rounded-lg shadow-md">
@@ -196,6 +208,29 @@ const PeregrinoPlace = () => {
             </div>
           ))}
         </div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+  <div className="w-full">
+    <iframe
+      className="w-full h-72 rounded-lg shadow-lg"
+      src="https://www.youtube.com/embed/K6t47Tkj_wo"
+      title="Peregrino Place Video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+  <div>
+    <h2 className="text-2xl font-bold text-[#3fc7d8] mb-4">
+      Experience Peregrino Place
+    </h2>
+    <p className="text-gray-700">
+      Peregrino Place is the perfect getaway nestled in the serene Ayi Mensah
+      Valley. Discover nearby attractions and enjoy breathtaking views and
+      world-class amenities at the Safari Valley Resort, just minutes from Peregrino
+      Place.
+    </p>
+  </div>
+</div>
+
       </div>
     </div>
   );

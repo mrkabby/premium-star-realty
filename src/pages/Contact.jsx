@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faWhatsapp, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faWhatsapp, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 import ContactHeroImage from "../assets/highlights/MNKK_190.jpg"
 
@@ -45,7 +45,7 @@ const ContactUs = () => {
           {/* Email */}
           <div>
             <h3 className="text-lg font-semibold text-[#7B1C27]">EMAIL</h3>
-            <p className="text-gray-600 mt-2">sales@premiumstarrealty.com</p>
+            <p className="text-gray-600 mt-2">premiumstarrealty@gmail.com</p>
           </div>
         </div>
       </section>
@@ -55,20 +55,18 @@ const ContactUs = () => {
     Stay in touch with us
   </h3>
   <div className="flex justify-center space-x-4">
-    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://web.facebook.com/profile.php?id=61571593477120" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faFacebook} className="text-2xl text-blue-600 hover:text-blue-700" />
     </a>
-    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/premiumstarrealty/" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faInstagram} className="text-2xl text-black hover:text-gray-700" />
     </a>
     <a href="https://wa.me/233243380128" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faWhatsapp} className="text-2xl text-green-500 hover:text-green-600" />
     </a>
-    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-      <FontAwesomeIcon icon={faLinkedin} className="text-2xl text-blue-800 hover:text-blue-900" />
-    </a>
-    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-      <FontAwesomeIcon icon={faTwitter} className="text-2xl text-blue-400 hover:text-blue-500" />
+    
+    <a href="https://www.youtube.com/@PremiumStarRealty" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faYoutube} className="text-2xl text-red-500 hover:text-red-800" />
     </a>
   </div>
 </section>

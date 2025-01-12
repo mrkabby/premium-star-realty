@@ -1,6 +1,6 @@
 import React from "react";
 import Image1 from "../assets/Pregrino/NKANSA_170.jpg";
-import VideoFile from "../assets/video/Anowaa.mp4";
+
 import Image3 from "../assets/Peva/NKANSA_52.jpg";
 import LeroImage1 from "../assets/highlights/MNKK_180.jpg";
 import LeroImage2 from "../assets/Rochester House Community 20/NKANSA_53.jpg";
@@ -39,45 +39,46 @@ const HomePage = () => {
 
       {/* Video section */}
       <section className="py-12 px-6">
-        <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-16 lg:px-24 gap-8">
-          <div className="md:w-1/2 w-full">
-            <video
-              controls
-              className="rounded-lg shadow-lg w-full object-cover h-auto md:max-h-[300px]"
-            >
-              <source src={VideoFile} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-4 ">Anowaa Gardens</h2>
-            <p className="text-lg text-gray-700 mb-4">
-              ANOWAA Gardens, a 4-bedroom house with an Outhouse. Gated
-              community with 24-hour security which has easy access to Airport,
-              Palace Mall, Accra Mall, and Spintex Road.
-              <div className="text-red-900">
-              <br />
-              $1000 / month Unfurnished
-              <br />
-              $2500/ month Fully furnished
-              <br />
-              $250 a day for 4 bedrooms Fully furnished
-              </div>
-            </p>
-            <p className="text-gray-600 mb-6">
-              <strong>Location:</strong> East Airport
-            </p>
-            <a
-              href="https://wa.me/233243380128?text=Hello%2C%20I%27m%20interested%20in%20Anowaa%20Gardens."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#3fc7d8] text-white py-2 px-6 rounded hover:bg-blue-700 transition"
-            >
-              Learn More
-            </a>
-          </div>
+  <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-16 lg:px-24 gap-8">
+    <div className="md:w-1/2 w-full flex justify-center">
+      <iframe
+        className="rounded-lg shadow-lg w-[90%] md:w-[80%] lg:w-[100%] h-auto aspect-video"
+        src="https://www.youtube.com/embed/4f6aRj3_rME"
+        title="Anowaa Gardens Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+    <div className="md:w-1/2 text-center md:text-left">
+      <h2 className="text-3xl font-bold mb-4">Anowaa Gardens</h2>
+      <p className="text-lg text-gray-700 mb-4">
+        ANOWAA Gardens, a 4-bedroom house with an Outhouse. Gated community with
+        24-hour security which has easy access to Airport, Palace Mall, Accra
+        Mall, and Spintex Road.
+        <div className="text-red-900">
+          <br />
+          $1000 / month Unfurnished
+          <br />
+          $2500/ month Fully furnished
+          <br />
+          $250 a day for 4 bedrooms Fully furnished
         </div>
-      </section>
+      </p>
+      <p className="text-gray-600 mb-6">
+        <strong>Location:</strong> East Airport
+      </p>
+      <a
+        href="https://wa.me/233243380128?text=Hello%2C%20I%27m%20interested%20in%20Anowaa%20Gardens."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-[#3fc7d8] text-white py-2 px-6 rounded hover:bg-blue-700 transition"
+      >
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* About Us Section */}
       <section className="py-12 bg-gray-100">
