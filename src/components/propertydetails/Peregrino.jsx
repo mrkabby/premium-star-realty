@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const PeregrinoPlace = () => {
@@ -35,10 +35,8 @@ const PeregrinoPlace = () => {
         try {
           const image = await import(`../../assets/Pregrino/NKANSA_${i}.jpg`);
           loadedImages.push(image.default);
-        } catch (error) {
-          console.warn(
-            `Image ../../assets/Pregrino/NKANSA_${i}.jpg not found.`
-          );
+        } catch {
+          // Image not found, skip
         }
       }
       setImages(loadedImages);

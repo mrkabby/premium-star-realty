@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import SlideImage1 from "../assets/highlights/MNKK_147.jpg";
 
 const TestimonialSection = () => {
@@ -38,7 +38,7 @@ const TestimonialSection = () => {
             WE LET OUR CLIENTS DO THE SPEAKING FOR US
           </p>
           <p className="italic text-lg leading-relaxed">
-            "{testimonials[currentTestimonial].quote}"
+            &ldquo;{testimonials[currentTestimonial].quote}&rdquo;
           </p>
           <p className="text-right text-sm mt-4">- {testimonials[currentTestimonial].author}</p>
           <div className="flex justify-center mt-4 space-x-2">

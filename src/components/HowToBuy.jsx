@@ -1,4 +1,4 @@
-import React from "react";
+// ...existing code...
 import HowToBuyImage from "../assets/highlights/MNKK_145.jpg"; 
 
 const HowToBuy = () => {

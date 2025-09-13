@@ -1,4 +1,4 @@
-import React from "react";
+// ...existing code...
 import { useLocation } from "react-router-dom";
 
 const properties = [

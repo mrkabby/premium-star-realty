@@ -1,9 +1,9 @@
-import React from "react";
+// ...existing code...
 import Image1 from "../assets/Pregrino/NKANSA_170.jpg";
 
 import Image3 from "../assets/Peva/NKANSA_52.jpg";
 import LeroImage1 from "../assets/highlights/MNKK_180.jpg";
-import LeroImage2 from "../assets/Rochester House Community 20/NKANSA_53.jpg";
+
 import LeroImage3 from "../assets/highlights/MNKK_130.jpg";
 import HeroSection from "../components/HeroSection";
 import ContactForm from "../components/TalkToUs";
@@ -21,11 +21,7 @@ const HomePage = () => {
       description: "Sophisticated residential development at Community 20.",
       image: Image3,
     },
-    {
-      name: "Rochester House ",
-      description: "Lush greenery at Community 20.",
-      image: LeroImage2,
-    },
+    
     {
       name: "The Essence",
       description: "Private rooftop infinity pool with garden oasis views.",
@@ -90,7 +86,7 @@ const HomePage = () => {
               We are a luxury real estate development and management company.
               Our mission is to develop and invest in luxury properties. We aim
               to create value for homeowners and investors by designing
-              innovative products and prioritizing our clients' needs.
+              innovative products and prioritizing our clients&apos; needs.
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed px-1">
               Our vision is to become the leading Real Estate Developers in

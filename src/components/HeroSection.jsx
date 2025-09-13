@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import HeroImage1 from "../assets/highlights/MNKK_97.jpg";
 import HeroImage2 from "../assets/AspectCourt/outside.jpg";
 import HeroImage3 from "../assets/Peva/NKANSA_52.jpg";
 import HeroImage4 from "../assets/Community18/Outside1.jpg";
 import HeroImage5 from "../assets/Pregrino/NKANSA_227.jpg";
-import HeroImage6 from "../assets/Rochester House Community 20/NKANSA_53.jpg";
+
 import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
@@ -15,7 +15,7 @@ const HeroSection = () => {
     HeroImage3,
     HeroImage4,
     HeroImage5,
-    HeroImage6,
+   
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 

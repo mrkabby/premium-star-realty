@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // Image Imports (Replace with actual image paths)
 import Image1 from "../../assets/AspectCourt/pathway.jpg";

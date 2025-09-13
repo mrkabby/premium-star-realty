@@ -1,13 +1,14 @@
-import React from "react";
+// ...existing code...
 import { useNavigate } from "react-router-dom";
 
 import DanImage1 from "../assets/highlights/MNKK_102.jpg";
 import PevaImage2 from "../assets/Peva/NKANSA_52.jpg";
-import RochImage3 from "../assets/Rochester House Community 20/NKANSA_53.jpg";
 import PereImage from "../assets/Pregrino/NKANSA_227.jpg";
 import Com18Image from "../assets/Community18/Outside3.jpg";
 import AspectCourtImage from "../assets/AspectCourt/outside.jpg";
 import AyimensahImage from "../assets/AyiMensah/road2.jpg";
+import Community20Image from "../assets/Community18/Outside1.jpg";
+import EastAirportImage from "../assets/highlights/MNKK_180.jpg";
 
 const Properties = () => {
   const navigate = useNavigate();
@@ -33,16 +34,8 @@ const Properties = () => {
       price: "$70",
       type: "For Rent",
     },
-    {
-      id: "Rochester-House",
-      image: RochImage3,
-      title: "Rochester House",
-      description:
-        "A harmonious blend of contemporary design and functional living spaces.",
-      location: "Community 20, Accra",
-      price: "$???",
-      type: "For Sale",
-    },
+    
+     
     {
       id: "Peregrino-Place",
       image: PereImage,
@@ -82,6 +75,26 @@ const Properties = () => {
       location: "Cantoments close to the US embassy",
       price: "$300",
       type: "For Rent",
+    },
+    {
+      id: "Community-20",
+      image: Community20Image,
+      title: "Community 20 Residence",
+      description:
+        "Modern 3-bedroom house with spacious living area and serene environment.",
+      location: "Community 20, Accra",
+      price: "$180,000",
+      type: "For Sale",
+    },
+    {
+      id: "East-Airport",
+      image: EastAirportImage,
+      title: "East Airport Villa",
+      description:
+        "Luxury 5-bedroom villa with pool, garden, and top-notch security in East Airport.",
+      location: "East Airport, Accra",
+      price: "$350,000",
+      type: "For Sale",
     },
   ];
 

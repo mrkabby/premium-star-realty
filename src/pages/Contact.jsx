@@ -1,4 +1,4 @@
-import React from "react";
+// ...existing code...
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faWhatsapp, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
@@ -55,7 +55,7 @@ const ContactUs = () => {
     Stay in touch with us
   </h3>
   <div className="flex justify-center space-x-4">
-    <a href="https://web.facebook.com/profile.php?id=61571593477120" target="_blank" rel="noopener noreferrer">
+    <a href="https://web.facebook.com/premiumstarrealty" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faFacebook} className="text-2xl text-blue-600 hover:text-blue-700" />
     </a>
     <a href="https://www.instagram.com/premiumstarrealty/" target="_blank" rel="noopener noreferrer">

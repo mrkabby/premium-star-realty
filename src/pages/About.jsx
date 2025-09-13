@@ -1,4 +1,4 @@
-import React from "react";
+// ...existing code...
 import HeroImage from "../assets/highlights/MNKK_180.jpg"; 
 import VisionImage from "../assets/highlights/MNKK_190.jpg"; 
 import AboutSection from "../components/AboutUs";
