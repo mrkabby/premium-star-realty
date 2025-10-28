@@ -42,7 +42,7 @@ const Footer = () => {
             to="/properties/The-Daniel-Duplex"
             className="hover:text-[#3fc7d8] transition-colors"
           >
-            The Daniel Duplex
+            Daniels Court
           </Link>
         </li>
         <li>
@@ -50,17 +50,10 @@ const Footer = () => {
             to="/properties/Six-Zigma-Court"
             className="hover:text-[#3fc7d8] transition-colors"
           >
-            Six Zigma Court
+            Six Sigma 1
           </Link>
         </li>
-        <li>
-          <Link
-            to="/properties/Rochester-House"
-            className="hover:text-[#3fc7d8] transition-colors"
-          >
-            Rochester House
-          </Link>
-        </li>
+        
         <li>
           <Link
             to="/properties/Peregrino-Place"
@@ -90,7 +83,7 @@ const Footer = () => {
             to="/properties/Community-20"
             className="hover:text-[#3fc7d8] transition-colors"
           >
-            Community 20 Residence
+            Six Sigma 2
           </Link>
         </li>
         <li>

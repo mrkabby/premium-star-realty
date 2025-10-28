@@ -24,7 +24,8 @@ const TheDanielDuplex = () => {
 
   const property = {
     id: 1,
-    title: "The Daniel Duplex",
+    title: "Daniels Court",
+    booked: true,
     description:
       "Discover the perfect blend of modern elegance and natural beauty at The Daniel Duplex. Designed for comfort, built for luxury.",
     address: "Community 18, Accra",
@@ -146,12 +147,21 @@ const TheDanielDuplex = () => {
           <p className="text-2xl font-bold text-[#7B1C27] mt-6">
             Price: {stayOption === "short" ? property.prices.short : property.prices.long}
           </p>
-          <button
-            className="mt-4 px-6 py-3 bg-[#3fc7d8] text-white rounded hover:bg-[#5e141b] transition"
-            onClick={handleBooking}
-          >
-            Book Now
-          </button>
+          {property.booked ? (
+            <button
+              className="mt-4 px-6 py-3 bg-gray-400 text-white rounded cursor-not-allowed"
+              disabled
+            >
+              Booked
+            </button>
+          ) : (
+            <button
+              className="mt-4 px-6 py-3 bg-[#3fc7d8] text-white rounded hover:bg-[#5e141b] transition"
+              onClick={handleBooking}
+            >
+              Book Now
+            </button>
+          )}
         </div>
 
         {/* Image Carousel */}

@@ -87,7 +87,8 @@ import Community20Image83 from "../../assets/Community20/Lndryy_83.JPG";
 const Community20 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const property = {
-    title: "Community 20 Residence",
+  title: "Six Sigma 2",
+    booked: true,
     description:
       "Modern 3-bedroom house with spacious living area and serene environment. Located in Community 20, Accra.",
     address: "Community 20, Accra",
@@ -163,12 +164,18 @@ const Community20 = () => {
           <p className="text-2xl font-bold text-[#7B1C27] mt-6">
             Price: {property.price}
           </p>
-          <button
-            className="mt-4 px-6 py-3 bg-[#3fc7d8] text-white rounded hover:bg-[#5e141b] transition"
-            onClick={() => window.location.href = "mailto:agent@premiumstarrealty.com?subject=Community 20 Residence Inquiry"}
-          >
-            Contact Agent
-          </button>
+          {property.booked ? (
+            <button className="mt-4 px-6 py-3 bg-gray-400 text-white rounded cursor-not-allowed" disabled>
+              Booked
+            </button>
+          ) : (
+            <button
+              className="mt-4 px-6 py-3 bg-[#3fc7d8] text-white rounded hover:bg-[#5e141b] transition"
+              onClick={() => window.location.href = `mailto:agent@premiumstarrealty.com?subject=${encodeURIComponent(property.title + ' Inquiry')}`}
+            >
+              Contact Agent
+            </button>
+          )}
         </div>
 
         {/* Image Carousel */}

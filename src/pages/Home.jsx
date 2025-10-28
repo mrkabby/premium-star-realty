@@ -4,7 +4,7 @@ import Image1 from "../assets/Pregrino/NKANSA_170.jpg";
 import Image3 from "../assets/Peva/NKANSA_52.jpg";
 import LeroImage1 from "../assets/highlights/MNKK_180.jpg";
 
-import LeroImage3 from "../assets/highlights/MNKK_130.jpg";
+import LeroImage3 from "../assets/Pregrino/NKANSA_227.jpg";
 import HeroSection from "../components/HeroSection";
 import ContactForm from "../components/TalkToUs";
 import { Link } from "react-router-dom";
@@ -12,19 +12,19 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   const properties = [
     {
-      name: "The Daniel Duplex",
+      name: "Daniels Court",
       description: "Luxury apartments at Community 18 .",
       image: LeroImage1,
     },
     {
-      name: "Six Zigma Court",
+      name: "Six Sigma 1",
       description: "Sophisticated residential development at Community 20.",
       image: Image3,
     },
     
     {
-      name: "The Essence",
-      description: "Private rooftop infinity pool with garden oasis views.",
+      name: "Peregrino-Place",
+      description: "Private Luxury apartments with garden oasis views.",
       image: LeroImage3,
     },
   ];
@@ -46,9 +46,9 @@ const HomePage = () => {
       ></iframe>
     </div>
     <div className="md:w-1/2 text-center md:text-left">
-      <h2 className="text-3xl font-bold mb-4">Anowaa Gardens</h2>
+      <h2 className="text-3xl font-bold mb-4">East Airport Zero Place</h2>
       <p className="text-lg text-gray-700 mb-4">
-        ANOWAA Gardens, a 4-bedroom house with an Outhouse. Gated community with
+        East Airport Zero Place, a 4-bedroom house with an Outhouse. Gated community with
         24-hour security which has easy access to Airport, Palace Mall, Accra
         Mall, and Spintex Road.
         <div className="text-red-900">
@@ -81,7 +81,7 @@ const HomePage = () => {
         <div className="container mx-auto flex flex-col md:flex-row items-center px-6 md:px-16 lg:px-20">
           <div className="md:w-1/2 order-2 md:order-1 mt-6 md:mt-0 text-center md:text-left">
             <h2 className="text-4xl font-bold mb-6">About Us</h2>
-            <h3 className="text-3xl font-bold mb-4">IT'S WHERE YOU BELONG</h3>
+            <h3 className="text-3xl font-bold mb-4">IT&rsquo;S WHERE YOU BELONG</h3>
             <p className="text-gray-700 mb-4 leading-relaxed px-">
               We are a luxury real estate development and management company.
               Our mission is to develop and invest in luxury properties. We aim
@@ -113,7 +113,7 @@ const HomePage = () => {
       <section className="py-12">
         <div className="container mx-auto px-6 md:px-16 lg:px-24">
           <h2 className="text-4xl font-bold mb-8 text-center">
-            Discover a Place You’ll Love to Live
+            Discover a Place You&rsquo;ll Love to Live
           </h2>
           <h3 className="text-3xl font-bold mb-6 text-center">
             Our Properties

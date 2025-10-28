@@ -1,4 +1,5 @@
 // ...existing code...
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import DanImage1 from "../assets/highlights/MNKK_102.jpg";
@@ -7,8 +8,9 @@ import PereImage from "../assets/Pregrino/NKANSA_227.jpg";
 import Com18Image from "../assets/Community18/Outside3.jpg";
 import AspectCourtImage from "../assets/AspectCourt/outside.jpg";
 import AyimensahImage from "../assets/AyiMensah/road2.jpg";
-import Community20Image from "../assets/Community18/Outside1.jpg";
-import EastAirportImage from "../assets/highlights/MNKK_180.jpg";
+import Community20Image from "../assets/Community20/Lndryy_47.jpg";
+import EastAirportImage from "../assets/EastAirport/Lndryy_85.jpg";
+import PlaceholderImage from "../assets/logo.png";
 
 const Properties = () => {
   const navigate = useNavigate();
@@ -17,22 +19,26 @@ const Properties = () => {
     {
       id: "The-Daniel-Duplex",
       image: DanImage1,
-      title: "The Daniel Duplex",
+      title: "Daniels Court",
       description:
         "Luxury townhouses nestled in a serene environment with top-notch amenities.",
       location: "Community 18, Accra",
       price: "$50",
       type: "For Rent",
+      status: "booked",
+      category: "furnished",
     },
     {
       id: "Six-Zigma-Court",
       image: PevaImage2,
-      title: "Six Zigma Court",
+      title: "Six Sigma 1",
       description:
         "State-of-the-art apartments offering a blend of modernity and elegance.",
       location: "Community 20, Accra",
       price: "$70",
       type: "For Rent",
+      status: "booked",
+      category: "furnished",
     },
     
      
@@ -45,6 +51,7 @@ const Properties = () => {
       location: "Ayimensah, Kweiman",
       price: "$150",
       type: "For Rent",
+      category: "furnished",
     },
     {
       id: "Town-House",
@@ -55,6 +62,7 @@ const Properties = () => {
       location: "Ayi Mensah, Oyarifa Park",
       price: "$150",
       type: "For Rent",
+      category: "furnished",
     },
     {
       id: "Luxury-House",
@@ -65,6 +73,7 @@ const Properties = () => {
       location: "Community 18",
       price: "$250,000",
       type: "For Sale",
+      category: "furnished",
     },
     {
       id: "Aspect-Court",
@@ -75,28 +84,104 @@ const Properties = () => {
       location: "Cantoments close to the US embassy",
       price: "$300",
       type: "For Rent",
+      category: "furnished",
     },
     {
       id: "Community-20",
       image: Community20Image,
-      title: "Community 20 Residence",
+  title: "Six Sigma 2",
       description:
         "Modern 3-bedroom house with spacious living area and serene environment.",
       location: "Community 20, Accra",
       price: "$180,000",
       type: "For Sale",
+      status: "booked",
+      category: "furnished",
     },
     {
       id: "East-Airport",
       image: EastAirportImage,
-      title: "East Airport Villa",
+  title: "East Airport Residence",
       description:
-        "Luxury 5-bedroom villa with pool, garden, and top-notch security in East Airport.",
-      location: "East Airport, Accra",
+  "Luxury 5-bedroom residence with pool, garden, and top-notch security in East Airport.",
+  location: "East Airport Residence, Accra",
       price: "$350,000",
       type: "For Sale",
+      category: "furnished",
+    },
+    {
+      id: "Community-14-3-Bed",
+      image: PlaceholderImage,
+      title: "Community 14 - 3 Bedroom (Fully Furnished)",
+      description: "3 bedroom fully furnished apartment located in Community 14. Modern finishes, secure estate.",
+      location: "Community 14, Accra",
+      price: "$200",
+      type: "For Rent",
+      category: "furnished",
+    },
+    // Ongoing Projects (placeholders - you can replace images later)
+    {
+      id: "Christmas-Bonanza",
+      image: PlaceholderImage,
+      title: "Christmas Bonanza",
+      description: "Seasonal/ongoing development project - details coming soon.",
+      location: "TBD",
+      price: "Contact for pricing",
+      type: "For Sale",
+      category: "ongoing",
+    },
+    {
+      id: "Event-Center",
+      image: PlaceholderImage,
+      title: "Event Center",
+      description: "Ongoing construction of an events and conference center.",
+      location: "TBD",
+      price: "Contact for pricing",
+      type: "For Sale",
+      category: "ongoing",
+    },
+    // Investment Properties (placeholders)
+    {
+      id: "Hostel-Oyibi",
+      image: PlaceholderImage,
+      title: "Hostel Apartment Building - Oyibi",
+      description: "Hostel apartment building available for rent. Ideal for student or worker accommodation.",
+      location: "Oyibi",
+      price: "Contact for rent",
+      type: "For Rent",
+      category: "investment",
+    },
+    {
+      id: "Four-2-Bedroom-Apartments",
+      image: PlaceholderImage,
+      title: "Four 2-Bedroom Apartments",
+      description: "A block of four 2-bedroom apartments suitable for rental investment.",
+      location: "Oyibi / TBD",
+      price: "Contact for pricing",
+      type: "For Rent",
+      category: "investment",
+    },
+    {
+      id: "Adenta-4-Bedroom-Remodel",
+      image: PlaceholderImage,
+      title: "4-Bedroom Old Apartment - Adenta",
+      description: "4 bedroom apartment in Adenta — for remodeling and furnishing.",
+      location: "Adenta",
+      price: "$70,000 (remodel & furnish)",
+      type: "For Sale",
+      category: "investment",
     },
   ];
+
+  const [selectedCategory, setSelectedCategory] = useState("furnished");
+  const categories = [
+    { id: "furnished", title: "Furnished / Completed" },
+    { id: "ongoing", title: "Ongoing Projects" },
+    { id: "investment", title: "Investment Properties" },
+  ];
+  const filteredProperties = properties.filter(
+    (p) => p.category === selectedCategory
+  );
 
   return (
     <div>
@@ -110,8 +195,29 @@ const Properties = () => {
 
       {/* Project Cards Section */}
       <section className="py-12 px-6">
+        {/* Category selector */}
+        <div className="max-w-4xl mx-auto mb-8 flex justify-center gap-4">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setSelectedCategory(cat.id)}
+              className={`px-4 py-2 rounded font-semibold transition border ${
+                selectedCategory === cat.id
+                  ? "bg-[#3fc7d8] text-white border-[#3fc7d8]"
+                  : "bg-white text-gray-700 border-gray-200"
+              }`}
+            >
+              {cat.title}
+            </button>
+          ))}
+        </div>
+
+        <h2 className="text-2xl font-bold text-center mb-6">
+          {categories.find((c) => c.id === selectedCategory)?.title}
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {properties.map((property) => (
+          {filteredProperties.length > 0 ? (
+            filteredProperties.map((property) => (
             <div
               key={property.id}
               className="rounded-lg shadow-lg overflow-hidden relative group"
@@ -129,6 +235,11 @@ const Properties = () => {
                 >
                   {property.type}
                 </span>
+                {property.status === "booked" && (
+                  <span className="absolute top-4 right-4 px-3 py-1 text-sm font-semibold text-white rounded bg-gray-500">
+                    Booked
+                  </span>
+                )}
               </div>
               <div className="p-4 bg-white">
                 <h3 className="text-xl font-bold text-[#7B1C27]">
@@ -141,20 +252,29 @@ const Properties = () => {
                 <p className="mt-4 text-lg font-bold text-[#7B1C27]">
                   {property.price}
                 </p>
-                <button
-                  className={`mt-4 px-6 py-2 rounded text-white font-semibold transition ${
-                    property.type === "For Sale"
-                      ? "bg-green-500 hover:bg-green-600"
-                      : "bg-blue-500 hover:bg-blue-600"
-                  }`}
-                  onClick={() =>
-                    navigate(`/booking/${property.id}`, {
-                      state: { property },
-                    })
-                  }
-                >
-                  {property.type === "For Sale" ? "Buy Now" : "Rent Now"}
-                </button>
+                {property.status === "booked" ? (
+                  <button
+                    className="mt-4 px-6 py-2 rounded text-white font-semibold bg-gray-400 cursor-not-allowed"
+                    disabled
+                  >
+                    Booked
+                  </button>
+                ) : (
+                  <button
+                    className={`mt-4 px-6 py-2 rounded text-white font-semibold transition ${
+                      property.type === "For Sale"
+                        ? "bg-green-500 hover:bg-green-600"
+                        : "bg-blue-500 hover:bg-blue-600"
+                    }`}
+                    onClick={() =>
+                      navigate(`/booking/${property.id}`, {
+                        state: { property },
+                      })
+                    }
+                  >
+                    {property.type === "For Sale" ? "Buy Now" : "Rent Now"}
+                  </button>
+                )}
               </div>
               <button
                 className="absolute bottom-4 right-4 px-4 py-2 bg-[#7B1C27] text-white text-sm font-bold rounded  group-hover:opacity-100 transition"
@@ -163,7 +283,12 @@ const Properties = () => {
                 View
               </button>
             </div>
-          ))}
+            ))
+          ) : (
+            <div className="col-span-full text-center text-gray-600">
+              No properties in this category yet. Upload or assign properties to the {categories.find(c=>c.id===selectedCategory)?.title} category.
+            </div>
+          )}
         </div>
       </section>
 

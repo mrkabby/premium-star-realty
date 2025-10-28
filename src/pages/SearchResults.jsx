@@ -4,9 +4,9 @@ import { useLocation } from "react-router-dom";
 const properties = [
   { id: 1, title: "Peregrino Place", location: "Ayimensah, Kweiman", description: "A beautiful destination for the perfect honeymoon or weekend getaway." },
   { id: 2, title: "Luxury House", location: "Accra Community 18", description: "Newly built luxury 4-bedroom houses for sale at Spintex Community 18." },
-  { id: 3, title: "Rochester House", location: "Accra community 20", description: "A harmonious blend of contemporary design and functional living spaces." },
-  { id: 4, title: "Six Zigma Court", location: "Accra Community 18", description: "State-of-the-art apartments offering a blend of modernity and elegance." },
-  { id: 5, title: "The Daniel Duplex", location: "Accra community 18", description: "Luxury townhouses nestled in a serene environment with top-notch amenities." },
+  
+  { id: 4, title: "Six Sigma 1", location: "Accra Community 18", description: "State-of-the-art apartments offering a blend of modernity and elegance." },
+  { id: 5, title: "Daniels Court", location: "Accra community 18", description: "Luxury townhouses nestled in a serene environment with top-notch amenities." },
   
 
 ];
