@@ -8,7 +8,7 @@ import PereImage from "../assets/Pregrino/NKANSA_227.jpg";
 import Com18Image from "../assets/Community18/Outside3.jpg";
 import AspectCourtImage from "../assets/AspectCourt/outside.jpg";
 import AyimensahImage from "../assets/AyiMensah/road2.jpg";
-import Community20Image from "../assets/Community20/Lndryy_47.jpg";
+import Community20Image from "../assets/Community20/Lndryy_47.JPG";
 import EastAirportImage from "../assets/EastAirport/Lndryy_85.JPG";
 import PlaceholderImage from "../assets/logo.png";
 
