@@ -19,6 +19,10 @@ import TownHouse from "./components/propertydetails/TownHouse";
 import AspectCourt from "./components/propertydetails/AspectCourt";
 import Community20 from "./components/propertydetails/Community20";
 import EastAirport from "./components/propertydetails/EastAirport";
+import Community14 from "./components/propertydetails/Community14";
+import InvestmentProperty from "./components/propertydetails/InvestmentProperty";
+import ChristmasBonanza from "./components/propertydetails/ChristmasBonanza";
+import HostelOyibi from "./components/propertydetails/HostelOyibi";
 
 const App = () => {
   return (
@@ -51,6 +55,10 @@ const App = () => {
             <Route path="/properties/Aspect-Court" element={<AspectCourt />} />
             <Route path="/properties/Community-20" element={<Community20 />} />
             <Route path="/properties/East-Airport" element={<EastAirport />} />
+            <Route path="/properties/Community-14-3-Bed" element={<Community14 />} />
+            <Route path="/properties/Adenta-4-Bedroom-Remodel" element={<InvestmentProperty />} />
+            <Route path="/properties/Christmas-Bonanza" element={<ChristmasBonanza />} />
+            <Route path="/properties/Hostel-Oyibi" element={<HostelOyibi />} />
             <Route path="/search" element={<SearchResults />} />
             <Route path="/booking/:id" element={<BookingPage />} />
             <Route path="/contact" element={<ContactUs />} />

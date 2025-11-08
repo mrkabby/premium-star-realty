@@ -8,8 +8,12 @@ import PereImage from "../assets/Pregrino/NKANSA_227.jpg";
 import Com18Image from "../assets/Community18/Outside3.jpg";
 import AspectCourtImage from "../assets/AspectCourt/outside.jpg";
 import AyimensahImage from "../assets/AyiMensah/road2.jpg";
-import Community20Image from "../assets/Community20/Lndryy_47.JPG";
+import Community20Image from "../assets/Community20/Lndryy_47.jpg";
 import EastAirportImage from "../assets/EastAirport/Lndryy_85.JPG";
+import Com14Image from "../assets/Com 14/IMG-20251016-WA0052.jpg";
+import HostelImage from "../assets/hostel/IMG-20251016-WA0070.jpg";
+import AdentaImage from "../assets/investment/IMG-20251016-WA0072.jpg";
+import XmasImage from "../assets/Christmas bonanza/WhatsApp Image 2025-10-16 at 14.11.33_2447ed05.jpg";
 import PlaceholderImage from "../assets/logo.png";
 
 const Properties = () => {
@@ -111,7 +115,7 @@ const Properties = () => {
     },
     {
       id: "Community-14-3-Bed",
-      image: PlaceholderImage,
+      image: Com14Image,
       title: "Community 14 - 3 Bedroom (Fully Furnished)",
       description: "3 bedroom fully furnished apartment located in Community 14. Modern finishes, secure estate.",
       location: "Community 14, Accra",
@@ -122,7 +126,7 @@ const Properties = () => {
     // Ongoing Projects (placeholders - you can replace images later)
     {
       id: "Christmas-Bonanza",
-      image: PlaceholderImage,
+      image: XmasImage,
       title: "Christmas Bonanza",
       description: "Seasonal/ongoing development project - details coming soon.",
       location: "TBD",
@@ -143,7 +147,7 @@ const Properties = () => {
     // Investment Properties (placeholders)
     {
       id: "Hostel-Oyibi",
-      image: PlaceholderImage,
+      image: HostelImage,
       title: "Hostel Apartment Building - Oyibi",
       description: "Hostel apartment building available for rent. Ideal for student or worker accommodation.",
       location: "Oyibi",
@@ -151,19 +155,10 @@ const Properties = () => {
       type: "For Rent",
       category: "investment",
     },
-    {
-      id: "Four-2-Bedroom-Apartments",
-      image: PlaceholderImage,
-      title: "Four 2-Bedroom Apartments",
-      description: "A block of four 2-bedroom apartments suitable for rental investment.",
-      location: "Oyibi / TBD",
-      price: "Contact for pricing",
-      type: "For Rent",
-      category: "investment",
-    },
+    
     {
       id: "Adenta-4-Bedroom-Remodel",
-      image: PlaceholderImage,
+      image: AdentaImage,
       title: "4-Bedroom Old Apartment - Adenta",
       description: "4 bedroom apartment in Adenta — for remodeling and furnishing.",
       location: "Adenta",
